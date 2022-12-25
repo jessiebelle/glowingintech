@@ -1,30 +1,48 @@
-import React from 'react'
-import { ConnectedRouter } from 'connected-react-router'
+import React from "react";
+import axios from "axios";
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+  } from "react-router-dom";
+// import Home component
+import Home from "./components/home";
+// import About component
+import About from "./components/about";
+// import ContactUs component
+import BlogPostIndex from "./components/index";
+axios.defaults.baseURL = process.env.REACT_APP_API_URL
 
-import { Box } from 'rebass'
-import { Snackbar } from 'react-redux-snackbar'
 
-import ParticlesWrapper from './components/ParticlesWrapper'
-import Footer from './components/Footer'
-// import Header from '../components/Header'
-import './App.css'
-import Routes from './routes'
-import './static/css/uikit.css'
-import ParcticlesWrapper from './components/ParticlesWrapper'
+function App() {
+    return (
+      <>
+        {/* This is the alias of BrowserRouter i.e. Router */}
+        <Router>
+          <Routes>
+            {/* This route is for home component 
+            with exact path "/", in component props 
+            we passes the imported component*/}
+            <Route path="/" element={<Home />} /> 
 
-const App = ({ history }) => {
-  return (
-    <Box className='Site'>
-      <ParcticlesWrapper />
-      <Box className='Site-content'>
-        <ConnectedRouter history={history}>
-          <Routes />
-        </ConnectedRouter>
-      </Box>
-      <Footer />
-      <Snackbar />
-    </Box>
-  )
-}
-
-export default App
+              
+            {/* This route is for about component 
+            with exact path "/about", in component 
+            props we passes the imported component*/}
+            <Route path="/about" element={<About />} />
+              
+            {/* This route is for index component
+            with exact path "/index", in 
+            component props we passes the imported component*/}
+            <Route path="/index" element={<BlogPostIndex />} />
+              
+            {/* If any route mismatches the upper 
+            route endpoints then, redirect triggers 
+            and redirects app to home component with to="/" */}
+          </Routes>
+        </Router>
+      </>
+    );
+  }
+    
+  export default App;
