@@ -1326,6 +1326,11 @@
   "resolved" "https://registry.npmjs.org/@emotion/weak-memoize/-/weak-memoize-0.3.0.tgz"
   "version" "0.3.0"
 
+"@fontsource/roboto@^4.5.8":
+  "integrity" "sha512-CnD7zLItIzt86q4Sj3kZUiLcBk1dSk81qcqgMGaZe7SQ1P8hFNxhMl5AZthK1zrDM5m74VVhaOpuMGIL4gagaA=="
+  "resolved" "https://registry.npmjs.org/@fontsource/roboto/-/roboto-4.5.8.tgz"
+  "version" "4.5.8"
+
 "@jest/expect-utils@^29.3.1":
   "integrity" "sha512-wlrznINZI5sMjwvUoLVk617ll/UYfGIZNxmbU+Pa7wmkL4vYzhV9R2pwVqUh4NWWuLQWkI8+8mOkxs//prKQ3g=="
   "resolved" "https://registry.npmjs.org/@jest/expect-utils/-/expect-utils-29.3.1.tgz"

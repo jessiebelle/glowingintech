@@ -13,8 +13,17 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import logo from '../img.png';
+import '@fontsource/roboto/300.css';
+import MicIcon from '@mui/icons-material/Mic';
+import RecordVoiceOverIcon from '@mui/icons-material/RecordVoiceOver';
+import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
+import DiamondIcon from '@mui/icons-material/Diamond';
+import PeopleIcon from '@mui/icons-material/People';
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 
-const pages = ['The podcast', 'Shownotes', 'Resources', 'Join the community', 'Contact us'];
+const pages = [[<RecordVoiceOverIcon fontSize={"small"}/> ,' The podcast'], [<FormatListBulletedIcon fontSize={"small"} />, ' Shownotes'],
+    [<DiamondIcon fontSize={"small"} />,' Resources'], [<PeopleIcon fontSize={"small"} />, ' Join the community'],
+    [<AlternateEmailIcon fontSize={"small"} />, ' Contact us']];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
