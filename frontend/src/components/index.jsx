@@ -2,61 +2,47 @@ import React from 'react';
 import axios from 'axios';
 
 class BlogPostIndex extends React.Component {
-  constructor(props) {
-    super(props);
 
-    this.state = {
-      posts: []
-    };
-  }
+	state = {
+		blogPosts : [],
+	}
 
-  // componentDidMount() {
-  //   // Fetch the list of posts from the server
-  //   fetch('/api/v2/pages')
-  //     .then(response => response.json())
-  //     .then(posts => {
-  //       this.setState({ posts });
-  //     });
-  // }
-  
-  const getData = async () => {
-    let response = await fetch("https://jessiebelle-refactored-space-giggle-p9qp69477pqh7qj6-8000.preview.app.github.dev/api/v2/pages");
-  
-    let data = await response.json();
-    console.log(data);  // line 29
-  
-    return data;
-  };
-  let data = await getData();
-  console.log(columnFromBackend);  // line 34
-//   componentDidMount() {
-  
-//     let data ;
+	componentDidMount() {
 
-//     axios.get('https://jessiebelle-refactored-space-giggle-p9qp69477pqh7qj6-8000.preview.app.github.dev/api/v2/pages')
-//     .then(res => {
-//         data = res.data;
-//         this.setState({
-//             details : data    
-//         });
-//     })
-//     .catch(err => {})
-// }
+		let data ;
 
+		axios.get('/api/v2/pages/')
+		.then(res => {
+			data = res.data;
+			this.setState({
+				blogPosts : {data}
+			});
+		})
+		.catch(err => {})
+	}
 
-  render() {
-    return (
-      <div className="BlogPostIndex">
-        {this.state.data.map(post => (
-          <div className="BlogPostIndex-item" key={post.id}>
-            <h2>{post.title}</h2>
-            <p>{post.excerpt}</p>
-            <a href={`/posts/${post.id}`}>Read more</a>
-          </div>
-        ))}
-      </div>
-    );
-  }
+render() {
+	return(
+	<div>
+		{/*{this.setState.blogPosts?.items?.map((post, key) => (*/}
+		{/*	<div key={key}>*/}
+		{/*	<div >*/}
+		{/*		<div >*/}
+		{/*				<h1>{post.title} </h1>*/}
+		{/*				<h1>{post.items.meta.slug} </h1>*/}
+		{/*				<footer >--- by*/}
+		{/*				<cite title="Source Title">*/}
+		{/*				{post.meta.detail_url}</cite>*/}
+		{/*				</footer>*/}
+		{/*		</div>*/}
+		{/*	</div>*/}
+		{/*	</div>*/}
+		{/*	)*/}
+		{/*)}*/}
+		<h1>Blog Post Index</h1>
+	</div>
+	);
+}
 }
 
 export default BlogPostIndex;

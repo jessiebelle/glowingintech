@@ -2,10 +2,15 @@ import React from "react";
 // importing Link from react-router-dom to navigate to 
 // different end points.
 import { Link } from "react-router-dom";
+import ResponsiveAppBar from "./header";
+
+
   
 const Home = () => {
   return (
     <div>
+        <ResponsiveAppBar pageTitle="Home" />
+
       <h1>Home Page</h1>
       <br />
       <ul>
@@ -15,7 +20,7 @@ const Home = () => {
         </li>
         <li>
           {/* Endpoint to route to Home component */}
-          <Link to="/index">Show Notes</Link>
+          <Link to={"./index"}>Show Notes</Link>
         </li>
         <li>
           {/* Endpoint to route to About component */}
