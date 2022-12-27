@@ -1,5 +1,8 @@
 import React from 'react';
 import axios from 'axios';
+import {Link} from "react-router-dom";
+import MenuItem from "@mui/material/MenuItem";
+import Typography from "@mui/material/Typography";
 
 class BlogPostIndex extends React.Component {
 
@@ -19,27 +22,17 @@ class BlogPostIndex extends React.Component {
 			});
 		})
 		.catch(err => {})
+		return data;
 	}
 
 render() {
 	return(
 	<div>
-		{/*{this.setState.blogPosts?.items?.map((post, key) => (*/}
-		{/*	<div key={key}>*/}
-		{/*	<div >*/}
-		{/*		<div >*/}
-		{/*				<h1>{post.title} </h1>*/}
-		{/*				<h1>{post.items.meta.slug} </h1>*/}
-		{/*				<footer >--- by*/}
-		{/*				<cite title="Source Title">*/}
-		{/*				{post.meta.detail_url}</cite>*/}
-		{/*				</footer>*/}
-		{/*		</div>*/}
-		{/*	</div>*/}
-		{/*	</div>*/}
-		{/*	)*/}
-		{/*)}*/}
 		<h1>Blog Post Index</h1>
+		              {this.state.blogPosts((post, index) => (
+						  <h2 key={index}> {post}</h2>
+              ))}
+
 	</div>
 	);
 }
