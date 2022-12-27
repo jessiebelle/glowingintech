@@ -10,7 +10,7 @@ import Home from "./components/home";
 // import About component
 import About from "./components/about";
 // import ContactUs component
-import BlogPostIndex from "./components/index";
+import BlogPostIndex from "./components";
 axios.defaults.baseURL = process.env.REACT_APP_API_URL
 
 
