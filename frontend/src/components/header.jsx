@@ -14,16 +14,21 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import logo from '../img.png';
 import '@fontsource/roboto/300.css';
-import MicIcon from '@mui/icons-material/Mic';
 import RecordVoiceOverIcon from '@mui/icons-material/RecordVoiceOver';
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
 import DiamondIcon from '@mui/icons-material/Diamond';
 import PeopleIcon from '@mui/icons-material/People';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import {Link} from "react-router-dom";
 
-const pages = [[<RecordVoiceOverIcon fontSize={"small"}/> ,' The podcast'], [<FormatListBulletedIcon fontSize={"small"} />, ' Shownotes'],
-    [<DiamondIcon fontSize={"small"} />,' Resources'], [<PeopleIcon fontSize={"small"} />, ' Join the community'],
-    [<AlternateEmailIcon fontSize={"small"} />, ' Contact us']];
+const pages = [
+    {icon: <RecordVoiceOverIcon fontSize={"small"}/> , pageTitle: 'The podcast', href: '/podcast'},
+    {icon: <FormatListBulletedIcon fontSize={"small"} />, pageTitle:' Shownotes', href: '/shownotes'},
+    {icon: <DiamondIcon fontSize={"small"} />, pageTitle: ' Resources', href: '/resources'},
+    {icon: <PeopleIcon fontSize={"small"} />, pageTitle: ' Join the community', href: '/community'},
+    {icon: <AlternateEmailIcon fontSize={"small"} />, pageTitle: ' Contact us', href: '/contactus'},
+];
+
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
@@ -80,10 +85,12 @@ function ResponsiveAppBar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+              {pages.map((page, index) => (
+                   <Link to={page.href}>
+                <MenuItem key={index} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">{page.pageTitle}</Typography>
                 </MenuItem>
+                    </Link>
               ))}
             </Menu>
           </Box>
@@ -104,16 +111,17 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
+            {pages.map((page, index) => (
               <Button
-                key={page}
+                key={index}
                 onClick={handleCloseNavMenu}
+                href={page.href}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page}
+                  {page.icon}
+                  {page.pageTitle}
               </Button>
             ))}
           </Box>
