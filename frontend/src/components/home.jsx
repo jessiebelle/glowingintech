@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ResponsiveAppBar from "./header";
+import HeaderImage from "../homepage/components/headerimage";
+
+const styles = {width: '100%', height: '100%', objectFit: 'cover'};
 
 
   
@@ -8,7 +11,9 @@ const Home = () => {
   return (
     <div>
         <ResponsiveAppBar pageTitle="Home" />
-
+        <container class={styles}>
+            <HeaderImage />
+        </container>
       <h1>Home Page</h1>
       <br />
       <ul>

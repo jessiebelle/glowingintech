@@ -21,6 +21,10 @@ import PeopleIcon from '@mui/icons-material/People';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import {Link} from "react-router-dom";
 
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+/>
 const pages = [
     {icon: <RecordVoiceOverIcon fontSize={"small"}/> , pageTitle: 'The podcast', href: '/podcast'},
     {icon: <FormatListBulletedIcon fontSize={"small"} />, pageTitle:' Shownotes', href: '/shownotes'},
@@ -38,9 +42,6 @@ function ResponsiveAppBar() {
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
@@ -49,9 +50,9 @@ function ResponsiveAppBar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-  const logoSize = {height: 80};
+  const logoSize = {height: 100};
   return (
-    <AppBar position="static">
+    <AppBar position="static" style={{ background: '#0A2A5E'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
             <img src={logo} alt="Logo" style={logoSize} />
@@ -105,9 +106,9 @@ function ResponsiveAppBar() {
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
               fontFamily: 'monospace',
-              fontWeight: 700,
+              fontWeight: 900,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: '#F15C80',
               textDecoration: 'none',
             }}
           >
@@ -118,7 +119,7 @@ function ResponsiveAppBar() {
                 key={index}
                 onClick={handleCloseNavMenu}
                 href={page.href}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: '#00AEEF', display: 'block' }}
               >
                   {page.icon}
                   {page.pageTitle}
@@ -127,11 +128,6 @@ function ResponsiveAppBar() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip>
             <Menu
               sx={{ mt: '45px' }}
               id="menu-appbar"
