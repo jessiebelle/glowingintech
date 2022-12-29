@@ -6,7 +6,7 @@ import {
     Route,
   } from "react-router-dom";
 // import Home component
-import Home from "./components/home";
+import Home from "./homepage/home";
 // import About component
 import About from "./components/about";
 // import ContactUs component

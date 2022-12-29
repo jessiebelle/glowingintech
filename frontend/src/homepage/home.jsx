@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ResponsiveAppBar from "./header";
-import HeaderImage from "../homepage/components/headerimage";
+import ResponsiveAppBar from "../components/header";
+import HeaderImage from "./components/headerimage";
 import { experimentalStyled as styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
 import {Button, createTheme, ThemeProvider} from "@mui/material";
-import buttonStyles from "../homepage/components/Picture.module.css";
+import buttonStyles from "./components/Picture.module.css";
 
 
 const Item = styled(Paper)(({ theme }) => ({
