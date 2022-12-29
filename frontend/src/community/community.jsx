@@ -9,6 +9,7 @@ const Community = () => {
   return (
     <div>
         <ResponsiveAppBar pageTitle="Home" />
+        <h1>Community Page</h1>
       </div>
     );
 };
