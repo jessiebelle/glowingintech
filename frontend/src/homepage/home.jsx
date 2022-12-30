@@ -8,6 +8,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
 import {Button, createTheme, ThemeProvider} from "@mui/material";
 import buttonStyles from "./components/Picture.module.css";
+import Footer from "../components/footer";
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -80,6 +81,7 @@ const Home = () => {
           <Link to="/contactus">Contact Us</Link>
         </li>
       </ul>
+        <Footer/>
     </div>
   );
 };
