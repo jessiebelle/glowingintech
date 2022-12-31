@@ -14,7 +14,7 @@ import BlogPostIndex from "./components";
 // import community component
 import Community from "./community/community";
 import Contact from "./contact/contact";
-import Podcast from "./podcast/components/podcast";
+import Podcast from "./podcast/podcast";
 axios.defaults.baseURL = process.env.REACT_APP_API_URL
 
 
