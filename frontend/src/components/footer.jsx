@@ -6,7 +6,7 @@ import {Typography} from "@mui/material";
 import {Link} from "react-router-dom";
 import makeStyles from "@mui/styles/makeStyles"
 import IconButton from '@material-ui/core/IconButton';
-import TikTokIcon from '@material-ui/icons/Facebook';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 
@@ -23,15 +23,19 @@ function ResponsiveFooter() {
         <Link href={"/contact"}>
           Contact
         </Link>
-          </div>
+
+        <Link >
+          About Us
+        </Link>
+ </div>
       </Typography>
       <div>
         <IconButton
           edge="start"
-          aria-label="Facebook"
-          href="https://www.facebook.com/glowingintech"
+          aria-label="YouTube"
+          href="https://www.youtube.com/c/GlowinginTech"
         >
-          <TikTokIcon />
+          <YouTubeIcon />
         </IconButton>
         <IconButton
           edge="start"

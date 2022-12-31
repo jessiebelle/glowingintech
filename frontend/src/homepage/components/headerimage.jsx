@@ -1,7 +1,6 @@
 import styles from "./Picture.module.css";
 
 import image from "../../static/ctrlimg.png";
-import {Button, createTheme, ThemeProvider} from "@mui/material";
 
 
 const HeaderImage = () => {

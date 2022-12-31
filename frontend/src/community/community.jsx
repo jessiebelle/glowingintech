@@ -25,7 +25,12 @@ const Community = () => {
         width: '100%',
 }} >
             <CommunityText/>
+            <Box textAlign={"center"} sx={{
+                flexGrow: 1,
+                backgroundColor: '#FDFFFC',
+            }}>
             <CommunityForm/>
+        </Box>
         </Box>
         <Footer/>
       </div>
