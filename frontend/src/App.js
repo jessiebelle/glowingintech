@@ -6,11 +6,14 @@ import {
     Route,
   } from "react-router-dom";
 // import Home component
-import Home from "./components/home";
+import Home from "./homepage/home";
 // import About component
-import About from "./components/about";
+import About from "./about/about";
 // import ContactUs component
 import BlogPostIndex from "./components";
+// import community component
+import Community from "./community/community";
+import Contact from "./contact/contact";
 axios.defaults.baseURL = process.env.REACT_APP_API_URL
 
 
@@ -35,10 +38,17 @@ function App() {
             with exact path "/index", in 
             component props we passes the imported component*/}
             <Route path="/index" element={<BlogPostIndex />} />
-              
+
+            {/* This route is for community component
+            with exact path "/community", in
+            component props we passes the imported component*/}
+            <Route path="/community" element={<Community />} />
             {/* If any route mismatches the upper 
             route endpoints then, redirect triggers 
             and redirects app to home component with to="/" */}
+            <Route path="*" element={<Home />} />
+              <Route path="/contact" element={<Contact />} />
+
           </Routes>
         </Router>
       </>

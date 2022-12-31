@@ -26,14 +26,12 @@ import {Link} from "react-router-dom";
   href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
 />
 const pages = [
-    {icon: <RecordVoiceOverIcon fontSize={"small"}/> , pageTitle: 'The podcast', href: '/podcast'},
+    {icon: <RecordVoiceOverIcon fontSize={"small"}/> , pageTitle: 'Podcast', href: '/podcast'},
     {icon: <FormatListBulletedIcon fontSize={"small"} />, pageTitle:' Shownotes', href: '/shownotes'},
     {icon: <DiamondIcon fontSize={"small"} />, pageTitle: ' Resources', href: '/resources'},
-    {icon: <PeopleIcon fontSize={"small"} />, pageTitle: ' Join the community', href: '/community'},
-    {icon: <AlternateEmailIcon fontSize={"small"} />, pageTitle: ' Contact us', href: '/contactus'},
+    {icon: <PeopleIcon fontSize={"small"} />, pageTitle: ' Community', href: '/community'},
+    {icon: <AlternateEmailIcon fontSize={"small"} />, pageTitle: ' Contact', href: '/contact'},
 ];
-
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -60,7 +58,6 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
-              aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
@@ -144,11 +141,6 @@ function ResponsiveAppBar() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
             </Menu>
           </Box>
         </Toolbar>
