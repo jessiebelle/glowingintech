@@ -3,76 +3,56 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import {Typography} from "@mui/material";
-import Link from '@material-ui/core/Link';
+import {Link} from "react-router-dom";
 import makeStyles from "@mui/styles/makeStyles"
 import IconButton from '@material-ui/core/IconButton';
-import FacebookIcon from '@material-ui/icons/Facebook';
+import TikTokIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    padding: theme.spacing(2),
-    backgroundColor: theme.palette.background.default,
-  },
-  socialIcons: {
-    display: 'flex',
-    alignItems: 'center',
-  },
-  link: {
-    marginRight: theme.spacing(1),
-  },
-}));
 
 
 
-function Footer() {
-  const classes = useStyles();
+function ResponsiveFooter() {
   const currentYear = new Date().getFullYear();
     return (
     <AppBar position="sticky" >
       <Toolbar>
-            <footer className={classes.root}>
       <Typography variant="body2">
-        <Link href="/contact" className={classes.link}>
+        <div>
+        <Link href={"/contact"}>
           Contact
         </Link>
-        <Link href="/privacy" className={classes.link}>
-          Privacy
-        </Link>
+          </div>
       </Typography>
-      <div className={classes.socialIcons}>
+      <div>
         <IconButton
           edge="start"
           aria-label="Facebook"
-          href="https://www.facebook.com"
+          href="https://www.facebook.com/glowingintech"
         >
-          <FacebookIcon />
+          <TikTokIcon />
         </IconButton>
         <IconButton
           edge="start"
           aria-label="Twitter"
-          href="https://www.twitter.com"
+          href="https://twitter.com/glowingintech"
         >
           <TwitterIcon />
         </IconButton>
         <IconButton
           edge="start"
           aria-label="Instagram"
-          href="https://www.instagram.com"
+          href="https://www.instagram.com/glowingintech/"
         >
           <InstagramIcon />
         </IconButton>
       </div>
       <Typography variant="caption">
-        Copyright {currentYear}
+         Glowing in Tech © {currentYear}
       </Typography>
-    </footer>
       </Toolbar>
     </AppBar>
     );
 }
-export default Footer;
+export default ResponsiveFooter;

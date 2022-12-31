@@ -13,6 +13,7 @@ import About from "./about/about";
 import BlogPostIndex from "./components";
 // import community component
 import Community from "./community/community";
+import Contact from "./contact/contact";
 axios.defaults.baseURL = process.env.REACT_APP_API_URL
 
 
@@ -45,6 +46,9 @@ function App() {
             {/* If any route mismatches the upper 
             route endpoints then, redirect triggers 
             and redirects app to home component with to="/" */}
+            <Route path="*" element={<Home />} />
+              <Route path="/contact" element={<Contact />} />
+
           </Routes>
         </Router>
       </>

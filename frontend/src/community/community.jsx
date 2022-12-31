@@ -7,6 +7,7 @@ import Home from "../homepage/home";
 import CommunityForm from "./components/communityform";
 import {Box} from "@mui/material";
 import CommunityText from "./components/communitytext";
+import Footer from "../components/footer";
 
 const styles = {width: '100%', height: '100%', objectFit: 'cover',
     backgroundColor:'#1C1F33',};
@@ -26,7 +27,7 @@ const Community = () => {
             <CommunityText/>
             <CommunityForm/>
         </Box>
-
+        <Footer/>
       </div>
     );
 };
