@@ -27,6 +27,7 @@ const PodcastIntro = () => {
 We were determined to fill this gap using the network we had built through our community work. Our aim was to amplify and showcase the incredible stories of women in tech to encourage more people from diverse backgrounds to pursue technical roles.
         </Typography>
                 <br/>
+                    <YoutubeEmbed embedId={"ic5zmXB0WbI"}/>
                     <Typography variant={"h6"} align={"justify"} gutterBottom>
             In May 2022, we release our first episode of Glowing in Tech. The podcast has been well received, with listenership consistently growing and an engaged community across our social platforms. We have had listeners contact us to let us know that they have made a career switch as a result, and succeeded in landing roles.
 With season 2, we aim to provide deep dives into career development topics, from underrepresented people, to provide honest insight into different career routes and grow our audience across platforms.

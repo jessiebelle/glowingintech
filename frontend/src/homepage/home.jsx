@@ -54,15 +54,7 @@ const Home = () => {
               <ThemeProvider theme={theme}>
         <Button color="secondary" variant="contained" size="large" classes={buttonStyles.button}>Join the community</Button>
         </ThemeProvider>
-              <h1>Home Page</h1>
     </Box>
-        <iframe src='https://www.youtube.com/embed/E7wJTI-1dvQ'
-                frameBorder='0'
-                allow='autoplay; encrypted-media'
-                allowFullScreen
-                title='video'
-        />
-
         <Footer/>
     </div>
   );

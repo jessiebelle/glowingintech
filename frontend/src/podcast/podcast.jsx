@@ -3,6 +3,7 @@ import ResponsiveAppBar from "../components/header";
 import ResponsiveFooter from "../components/footer";
 import PodcastImage from "./components/podcastimage";
 import PodcastIntro from "./components/podcastintro";
+import ListeningPlatforms from "./components/listeningplatforms";
 
 
 
@@ -12,6 +13,7 @@ const Podcast = () => {
         <ResponsiveAppBar pageTitle="Podcast" />
         <div align={"center"} >
         <PodcastImage/>
+            <ListeningPlatforms/>
             <PodcastIntro/>
             </div>
         <ResponsiveFooter/>
