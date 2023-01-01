@@ -41,17 +41,18 @@ const ListeningPlatforms = () => {
                 padding:5,
                 width: '80%',
   }}>
-<Typography variant={"h4"} align={"justify"} >
-    Listen to us on your favorite platform
+<Typography variant={"h4"} align={"justify"} fontWeight={10} >
+    Listen on your favorite platform
 </Typography>
+                    <br/>
         <Grid container spacing={2} columns={{ xs: 4, sm: 12, md: 12 }} justifyContent="space-around" alignItems="center">
         {platforms.map((platform, index) => (
             <a href={platform.href}>
           <Grid item xs key={index} alignItems="center" >
             <Item elevation="12" variant="outlined" sx={{
     ':hover': {
-      boxShadow: 20, backgroundColor: '#F15C80', color: 'white',
-        transform: 'scale(1.08)',
+      boxShadow: 20, backgroundColor: '#EF9CDA', color: 'white',
+        transform: 'scale(1.08)', transition: 'all 0.3s ease-in-out',
     },
   }}>
                 <picture className={styles.platformpicture}>
