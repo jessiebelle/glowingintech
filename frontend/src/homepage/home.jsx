@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import ResponsiveAppBar from "../components/header";
 import HeaderImage from "./components/headerimage";
 import { experimentalStyled as styled } from '@mui/material/styles';

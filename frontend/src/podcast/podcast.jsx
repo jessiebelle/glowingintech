@@ -13,7 +13,9 @@ const Podcast = () => {
         <ResponsiveAppBar pageTitle="Podcast" />
         <div align={"center"} >
         <PodcastImage/>
+            <div>
             <ListeningPlatforms/>
+                </div>
             <PodcastIntro/>
             </div>
         <ResponsiveFooter/>

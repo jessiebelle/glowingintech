@@ -1,7 +1,6 @@
 
 import image from "../../static/podcastthumbnail.png";
 import styles from "./podcast.module.css";
-import Box from "@mui/material/Box";
 
 
 const PodcastImage = () => {

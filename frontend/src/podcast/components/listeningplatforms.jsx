@@ -1,5 +1,5 @@
 import React from "react";
-import {Box, Button, Typography} from "@mui/material";
+import {Box, Typography} from "@mui/material";
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
@@ -13,6 +13,7 @@ import amazonmusic from "../../static/podcastplatform/amazonmusic.png";
 import youtube from "../../static/podcastplatform/youtube.png";
 import {experimentalStyled as styled} from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
+import styles from "./podcast.module.css";
 
 const platforms = [
     {logo: applepodcast, pageTitle: 'Apple Podcast', href: 'https://podcasts.apple.com/us/podcast/glowing-in-tech-the-showcase/id1626097038'},
@@ -31,24 +32,38 @@ const Item = styled(Paper)(({ theme }) => ({
   color: 'white',
 }));
 
+
 const ListeningPlatforms = () => {
     return (
-    <div>
+    <div className={styles.carousel}>
                 <Box sx={{ flexGrow:1,
                 margin: 'auto',
-      padding:5,
-            width: '80%',
+                padding:5,
+                width: '80%',
   }}>
-<Typography variant={"h4"} align={"justify"} gutterBottom>
-    Listen to our podcast on your favorite platform
+<Typography variant={"h4"} align={"justify"} >
+    Listen to us on your favorite platform
 </Typography>
-                </Box>
-        <Grid container spacing={{s: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} justifyContent="space-around" alignItems="center">
+        <Grid container spacing={2} columns={{ xs: 4, sm: 12, md: 12 }} justifyContent="space-around" alignItems="center">
         {platforms.map((platform, index) => (
-          <Grid xs={2} sm={4} md={4} key={index} alignItems="center">
-            <Item elevation="12" variant="outlined">{platform.pageTitle}</Item>
-          </Grid>))}
+            <a href={platform.href}>
+          <Grid item xs key={index} alignItems="center" >
+            <Item elevation="12" variant="outlined" sx={{
+    ':hover': {
+      boxShadow: 20, backgroundColor: '#F15C80', color: 'white',
+        transform: 'scale(1.08)',
+    },
+  }}>
+                <picture className={styles.platformpicture}>
+                    <source srcSet={platform.logo} />
+                    <img src={platform.logo} alt={platform.pageTitle} className={styles.platformpicture} />
+                </picture>
+
+            </Item>
+          </Grid>
+                </a>))}
         </Grid>
+        </Box>
         </div>
     );
     };
