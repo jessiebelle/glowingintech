@@ -14,6 +14,7 @@ import BlogPostIndex from "./components";
 // import community component
 import Community from "./community/community";
 import Contact from "./contact/contact";
+import Podcast from "./podcast/podcast";
 axios.defaults.baseURL = process.env.REACT_APP_API_URL
 
 
@@ -48,6 +49,7 @@ function App() {
             and redirects app to home component with to="/" */}
             <Route path="*" element={<Home />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/podcast" element={<Podcast />} />
 
           </Routes>
         </Router>
