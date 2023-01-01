@@ -1,14 +1,10 @@
-import react from 'react';
-import {Link} from "react-router-dom";
+import React from "react";
 import {Box, Button, Typography} from "@mui/material";
-import styles from "./podcast.module.css";
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-import YoutubeEmbed from "../../components/youtubeembed";
 import Grid from "@mui/material/Unstable_Grid2";
-import React from "@types/react";
 import applepodcast from "../../static/podcastplatform/applepod.png";
 import spotify from "../../static/podcastplatform/spotify.png";
 import googlepodcast from "../../static/podcastplatform/googlepodcast.png";
