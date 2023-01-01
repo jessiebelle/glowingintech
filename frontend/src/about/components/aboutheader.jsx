@@ -11,7 +11,6 @@ const AboutHeader = () => {
       </picture>
       <h1 className={styles.aboutheader}>Two engineers taking on the digital skills shortage and lack of diversity in the tech industry
  </h1>
-
     </article>
   );
 };

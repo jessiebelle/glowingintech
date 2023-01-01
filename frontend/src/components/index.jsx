@@ -1,8 +1,5 @@
 import React from 'react';
 import axios from 'axios';
-import {Link} from "react-router-dom";
-import MenuItem from "@mui/material/MenuItem";
-import Typography from "@mui/material/Typography";
 
 class BlogPostIndex extends React.Component {
 
