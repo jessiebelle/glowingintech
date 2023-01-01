@@ -23,8 +23,8 @@ function ResponsiveFooter() {
         <Link href={"/contact"}>
           Contact
         </Link>
-
-        <Link >
+      <br />
+        <Link href={"/about"}>
           About Us
         </Link>
  </div>
