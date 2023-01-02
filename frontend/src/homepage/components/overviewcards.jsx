@@ -16,29 +16,30 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const cards = [
-    {icon: <RecordVoiceOverIcon fontSize={"large"}/> , pageTitle: 'Podcast', href: '/podcast'},
-    {icon: <DiamondIcon fontSize={"large"} />, pageTitle: ' Resources', href: '/resources'},
-    {icon: <PeopleIcon fontSize={"large"} />, pageTitle: ' Community', href: '/community'},
+    {icon: <RecordVoiceOverIcon fontSize={"large"}/> , pageTitle: 'Podcast', href: '/podcast', description: 'A careers focused, award winning podcast, with a variety of guests. Giving you insight into the possibilities of careers in tech.'},
+    {icon: <DiamondIcon fontSize={"large"} />, pageTitle: ' Resources', href: '/resources', description: 'Videos, blog posts, downloadable resources, events and more to help you on your journey.'},
+    {icon: <PeopleIcon fontSize={"large"} />, pageTitle: ' Community', href: '/community', description: 'A place where all tech enthusiasts can come together to share their experiences.'},
 ];
 const OverviewCards = () => {
     return (
     <Box textAlign={"center"} sx={{
             flexGrow: 1,
-            backgroundColor: '#976391',
-            height: 300,}} >
+            backgroundColor: '#0A2A5E',
+            height: 300,
+            }} >
           <Grid container spacing={{s: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} justifyContent="space-around" alignItems="center">
             {cards.map((card, index) => (
-              <Grid xs={2} sm={4} md={4} key={index} alignItems="center">
-                <Item elevation="12" variant="outlined" sx={{
+              <Grid xs={2} sm={4} md={4} key={index} alignItems="center" padding={5}>
+                <Item elevation="12" sx={{ padding: 2,
     ':hover': {
-      boxShadow: 20, backgroundColor: '#93C6D6', color: 'white',
+      boxShadow: 20, backgroundColor: '#1C1F33', color: 'white',
         transform: 'scale(1.08)', transition: 'all 0.3s ease-in-out',
     },
   }}>
                     {card.icon}
-                        <Typography variant={"h4"}>{card.pageTitle}</Typography>
+                        <Typography variant={"h4"} >{card.pageTitle}</Typography>
                 <br/>
-                    <Typography variant={"body1"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Typography>
+                    <Typography variant={"body1"}>{card.description}</Typography>
                     </Item>
               </Grid>
             ))}

@@ -112,7 +112,8 @@ function ResponsiveAppBar() {
                 key={index}
                 onClick={handleCloseNavMenu}
                 href={page.href}
-                sx={{ my: 2, color: '#00AEEF', display: 'block' }}
+                sx={{ my: 2, color: '#00AEEF', display: 'block',
+              ':hover': { transform: 'scale(1.1)', color: '#F15C80', transition: 'all 0.3s ease-in-out',}}}
               >
                   {page.icon}
                   {page.pageTitle}
