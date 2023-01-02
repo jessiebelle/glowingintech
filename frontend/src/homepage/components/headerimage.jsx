@@ -10,8 +10,7 @@ const HeaderImage = () => {
         <source media="(min-width: 0px)" srcSet={image} />
         <img src={image} alt="Amber and Jessie in the studio" className={styles.picture} />
       </picture>
-      <h1 className={styles.header}>Empowering techies to succeed and thrive through podcasts, resources, and community.</h1>
-
+      <h1 className={styles.header}>Empowering you to glow in tech</h1>
     </article>
   );
 };
