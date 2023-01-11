@@ -9,6 +9,7 @@ import {Button, createTheme, ThemeProvider} from "@mui/material";
 import buttonStyles from "./components/Picture.module.css";
 import Footer from "../components/footer";
 import Overviewcards from "./components/overviewcards";
+import HomeText from "./components/hometext";
 
 
 
@@ -33,9 +34,10 @@ const Home = () => {
         <container class={styles}>
             <HeaderImage />
         </container>
-
+    <HomeText/>
     <Overviewcards/>
         <Box textAlign={"center"} >
+
               <ThemeProvider theme={theme}>
         <Button color="secondary" variant="contained" size="large" classes={buttonStyles.button}>Join the community</Button>
         </ThemeProvider>

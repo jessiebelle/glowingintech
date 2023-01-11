@@ -1,6 +1,6 @@
 
 import styles from "../../homepage/components/Picture.module.css";
-import image from "../../static/img_1.png";
+import image from "../../static/ctrlimg.png";
 
 const AboutHeader = () => {
   return (

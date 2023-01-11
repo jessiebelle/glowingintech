@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 .article {
     position: relative;
     overflow: hidden;
@@ -49,3 +51,19 @@
     left: 0;
     right: 0;
     margin: auto;}
+
+.introdiv {
+    position: center;
+    overflow: hidden;
+    background-color: #0A2A5E;
+    padding: 2%;
+}
+
+.text {
+    color: #FDFFFC;
+    text-shadow: 0 0 25px black;
+    height: fit-content;
+    margin: auto;
+    font-family: 'Roboto', Arial, sans-serif;
+    padding: 1%;
+}
