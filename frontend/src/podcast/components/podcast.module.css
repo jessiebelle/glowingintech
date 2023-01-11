@@ -21,11 +21,16 @@
     height: fit-content;
     margin: auto;
     font-family: 'Roboto', Arial, sans-serif;
+    padding: 1%;
 }
 .picture {
     width: auto;
     height: auto;
-
+    padding: 2%;
+}
+.picture:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 .platformpicture {
     width: 100px;
