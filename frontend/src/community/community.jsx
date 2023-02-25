@@ -16,14 +16,14 @@ const Community = () => {
            </container>
         <Box textAlign={"center"} sx={{
         flexGrow: 1,
-        backgroundColor: '#1C1F33',
+        backgroundColor: '#351c75ff',
         height: 'auto',
         width: '100%',
 }} >
             <CommunityText/>
             <Box textAlign={"center"} sx={{
                 flexGrow: 1,
-                backgroundColor: '#FDFFFC',
+                backgroundColor: '#351c75ff',
             }}>
             <CommunityForm/>
         </Box>

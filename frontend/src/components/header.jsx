@@ -47,7 +47,7 @@ function ResponsiveAppBar() {
   };
   const logoSize = {height: 100};
   return (
-    <AppBar position="static" style={{ background: '#0A2A5E'}}>
+    <AppBar position="static" style={{ background: '#351c75ff'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
             <img src={logo} alt="Logo" style={logoSize} />
@@ -58,7 +58,7 @@ function ResponsiveAppBar() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color="#00ffff1e"
             >
               <MenuIcon />
             </IconButton>
@@ -83,7 +83,7 @@ function ResponsiveAppBar() {
               {pages.map((page, index) => (
                    <Link to={page.href}>
                 <MenuItem key={index} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page.pageTitle}</Typography>
+                  <Typography color={"#8BDEFA"}>{page.pageTitle}</Typography>
                 </MenuItem>
                     </Link>
               ))}
@@ -101,7 +101,7 @@ function ResponsiveAppBar() {
               fontFamily: 'monospace',
               fontWeight: 900,
               letterSpacing: '.3rem',
-              color: '#F15C80',
+              color: '#8BDEFA',
               textDecoration: 'none',
             }}
           >
@@ -112,10 +112,9 @@ function ResponsiveAppBar() {
                 key={index}
                 onClick={handleCloseNavMenu}
                 href={page.href}
-                sx={{ my: 2, color: '#00AEEF', display: 'block',
-              ':hover': { transform: 'scale(1.1)', color: '#F15C80', transition: 'all 0.3s ease-in-out',}}}
+                sx={{ my: 2, color: '#8BDEFA', display: 'block',
+              ':hover': { transform: 'scale(1.1)', color: '#C3C9E9', transition: 'all 0.3s ease-in-out',}}}
               >
-                  {page.icon}
                   {page.pageTitle}
               </Button>
             ))}

@@ -1,7 +1,7 @@
 .article {
     position: center;
     overflow: hidden;
-    background-color: #1C1F33;
+    background-color: #351c75ff;
 }
 .carousel {
     position: center;
@@ -12,7 +12,7 @@
 .introdiv {
     position: center;
     overflow: hidden;
-    background-color: #0A2A5E;
+    background-color: #351c75ff;
     padding: 2%;
 }
 .text {
@@ -24,9 +24,8 @@
     padding: 1%;
 }
 .picture {
-    width: auto;
-    height: auto;
     padding: 2%;
+width: 30%;
 }
 .picture:hover {
     transform: scale(1.1);

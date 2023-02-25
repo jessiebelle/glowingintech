@@ -1,5 +1,5 @@
 
-import image from "../../static/podcastthumbnail.png";
+import image from "../../static/season2thumbnail.png";
 import styles from "./podcast.module.css";
 
 
@@ -8,7 +8,6 @@ const PodcastImage = () => {
         <article className={styles.article}>
             <h1 className={styles.header}>The award winning podcast, as featured by Spotify, Apple Podcasts and POCIT</h1>
       <picture className={styles.picture}>
-        <source media="(min-width: 0px)" srcSet={image} />
         <img src={image} alt="The podcast thumbnail with Amber and Jessie in the studio and the Glowing in tech Logo" className={styles.picture} />
       </picture>
     </article>

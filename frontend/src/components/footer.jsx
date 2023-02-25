@@ -14,15 +14,16 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 function ResponsiveFooter() {
   const currentYear = new Date().getFullYear();
     return (
-    <AppBar position="sticky" >
+    <AppBar position="sticky" style={{ background: '#351c75ff'}} >
       <Toolbar>
       <Typography variant="body2">
         <div>
-        <Link href={"/contact"}>
+        <Link style={{color:"white"}} href={"/contact"}>
           Contact
         </Link>
-      <br />
-        <Link href={"/about"}>
+      </div>
+          <div>
+        <Link style={{color:"white"}} href={"/about"}>
           About Us
         </Link>
  </div>
@@ -32,22 +33,23 @@ function ResponsiveFooter() {
           edge="start"
           aria-label="YouTube"
           href="https://www.youtube.com/c/GlowinginTech"
+
         >
-          <YouTubeIcon />
+          <YouTubeIcon style={{color:"white"}}/>
         </IconButton>
         <IconButton
           edge="start"
           aria-label="Twitter"
           href="https://twitter.com/glowingintech"
         >
-          <TwitterIcon />
+          <TwitterIcon style={{color:"white"}} />
         </IconButton>
         <IconButton
           edge="start"
           aria-label="Instagram"
           href="https://www.instagram.com/glowingintech/"
         >
-          <InstagramIcon />
+          <InstagramIcon style={{color:"white"}} />
         </IconButton>
       </div>
       <Typography variant="caption">

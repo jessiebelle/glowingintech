@@ -20,7 +20,14 @@ const HomeText = () => {
   }}>
                     <Item>
         <Typography variant={"h4"} align={"justify"} gutterBottom className={styles.text}>
-Glowing in tech is a weekly podcast between two black women Software Engineers and guests. We explore how to thrive whilst navigating the tech space and encourage more people from diverse backgrounds to level up in their careers.        </Typography>
+Glowing in Tech is a resource-sharing community-centred platform, inspiring and engaging those underrepresented and underserved in tech. Founded when two Black women from non-technical backgrounds wanted to learn how to code and become software engineers but were faced by a lack of resources, representation and encouragement.
+       </Typography>
+          <Typography variant={"h4"} align={"justify"} gutterBottom className={styles.text}>
+Now as successful engineers, they want to launch a space that can make the tech field feel more inclusive and accessible and remove unnecessary barriers to entry.
+
+Through events, knowledge-sharing, content creation and a podcast full of inspiring and high-profile speakers, we want to amplify and showcase underrepresented professionals in our industry and hopefully open doors for future talent in tech.
+
+       </Typography>
         <br/>
                     </Item>
                 </Box>
