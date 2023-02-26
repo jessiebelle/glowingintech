@@ -1,5 +1,5 @@
 import React from "react";
-import {Box, Typography} from "@mui/material";
+import {Box, Typography, Link} from "@mui/material";
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
@@ -64,6 +64,9 @@ const ListeningPlatforms = () => {
           </Grid>
                 </a>))}
         </Grid>
+                    <Typography variant={"h4"} align={"justify"} fontWeight={10} >
+                    <br/>
+                        <Link href={"https://lnk.to/glowingintech"}>Click here for a full list of streaming platforms </Link></Typography>
         </Box>
         </div>
     );

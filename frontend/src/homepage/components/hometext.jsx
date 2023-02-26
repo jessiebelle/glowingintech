@@ -6,9 +6,9 @@ import Overviewcards from "./overviewcards";
 
 const HomeText = () => {
     return (
-        <div className={styles.background}>
+        <div className={styles.bg}>
             <div className={styles.textBackground}>
-    <div className={styles.introdiv}>
+                <div className={styles.introdiv}>
                 <Box sx={{ flexGrow:1,
                 margin: 'auto',
                 width: '80%',

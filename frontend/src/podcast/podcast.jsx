@@ -11,7 +11,7 @@ const Podcast = () => {
   return (
     <div >
         <ResponsiveAppBar pageTitle="Podcast" />
-        <div align={"center"} >
+        <div align={"center"} sx={{padding:5,}}>
         <PodcastImage/>
             <div>
             <ListeningPlatforms/>

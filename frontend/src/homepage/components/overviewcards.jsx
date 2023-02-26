@@ -33,7 +33,7 @@ const OverviewCards = () => {
               <Grid xs={2} sm={4} md={4} key={index} alignItems="center" padding={5}>
                 <Item elevation="12" className={styles.cardGlow} sx={{
     ':hover': {
-      boxShadow: 20, backgroundColor: '#ff00ff0c', color: 'white',
+      boxShadow: 20,
         transform: 'scale(1.08)', transition: 'all 0.3s ease-in-out',
     },
   }}>
