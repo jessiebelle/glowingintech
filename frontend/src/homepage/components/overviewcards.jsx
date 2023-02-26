@@ -31,7 +31,7 @@ const OverviewCards = () => {
           <Grid container spacing={{s: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} justifyContent="space-around" alignItems="center">
             {cards.map((card, index) => (
               <Grid xs={2} sm={4} md={4} key={index} alignItems="center" padding={5}>
-                <Item elevation="12" sx={{ padding: 2, backgroundColor: '#eae4fb53', boxShadow: 10, borderRadius: 10,
+                <Item elevation="12" className={styles.cardGlow} sx={{
     ':hover': {
       boxShadow: 20, backgroundColor: '#ff00ff0c', color: 'white',
         transform: 'scale(1.08)', transition: 'all 0.3s ease-in-out',

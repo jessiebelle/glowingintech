@@ -27,7 +27,7 @@ const pages = [
     {icon: <FormatListBulletedIcon fontSize={"small"} />, pageTitle:' Shownotes', href: '/shownotes'},
     {icon: <DiamondIcon fontSize={"small"} />, pageTitle: ' Resources', href: '/resources'},
     {icon: <PeopleIcon fontSize={"small"} />, pageTitle: ' Community', href: '/community'},
-    {icon: <AlternateEmailIcon fontSize={"small"} />, pageTitle: ' Contact', href: '/contact'},
+    {icon: <AlternateEmailIcon fontSize={"small"} />, pageTitle: ' Team', href: '/about'},
 ];
 
 function ResponsiveAppBar() {

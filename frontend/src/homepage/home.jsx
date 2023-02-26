@@ -1,23 +1,32 @@
 import React from "react";
 import ResponsiveAppBar from "../components/header";
 import HeaderImage from "./components/headerimage";
-import {createTheme} from "@mui/material";
 import Footer from "../components/footer";
 import HomeText from "./components/hometext";
+import {Box} from "@mui/material";
 
 
 
-const styles = {width: '100%', height: '100%', objectFit: 'cover'};
+
+
+const styles = {width: '100%', height: '100%', objectFit: 'cover', margin: 'auto'};
 
   
 const Home = () => {
   return (
-    <div style={{backgroundColor: '#351c75ff'}}>
+    <div style={{backgroundColor: '#351c75ff', padding:3}}>
         <ResponsiveAppBar pageTitle="Home" />
         <container class={styles}>
             <HeaderImage />
         </container>
+                <Box textAlign={"center"} sx={{
+        flexGrow: 1,
+        backgroundColor: '#351c75ff',
+        height: 'auto',
+        width: '100%',
+}} >
     <HomeText/>
+    </Box>
         <Footer/>
     </div>
   );
