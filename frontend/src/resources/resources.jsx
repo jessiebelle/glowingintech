@@ -1,10 +1,8 @@
 import React from "react";
 import ResponsiveAppBar from "../components/header";
-import AboutHeader from "../about/components/aboutheader";
 import ResponsiveFooter from "../components/footer";
 import ResourcesHeader from "./components/ResourcesHeader";
 import styles from "./components/Resources.module.css";
-
 
 const Resources = () => {
   return (
