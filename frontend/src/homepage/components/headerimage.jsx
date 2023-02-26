@@ -1,7 +1,7 @@
 import React from "react";
 
 import styles from "./Picture.module.css";
-import image from "../../static/Untitled.png";
+import image from "../../static/header.jpg";
 
 
 const HeaderImage = () => {
