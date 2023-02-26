@@ -31,7 +31,7 @@ const OverviewCards = () => {
           <Grid container spacing={{s: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} justifyContent="space-around" alignItems="center">
             {cards.map((card, index) => (
               <Grid xs={2} sm={4} md={4} key={index} alignItems="center" padding={5}>
-                <Item elevation="12" className={styles.cardGlow}>
+                <Item elevation="12" className={styles.cards}>
                     {card.icon}
                         <Typography variant={"h4"} >{card.pageTitle}</Typography>
                 <br/>

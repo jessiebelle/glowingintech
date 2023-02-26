@@ -9,21 +9,20 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-import amberPicture from "../../static/amberdp.jpeg";
+import adodoolaPicture from "../../static/adodooladp.jpg";
 
 import styles from "./About.module.css";
 
-const AboutAmber = () =>{
+const AboutAdodoola = () =>{
   return (
       <div>
 
-                    <img src={amberPicture} alt="Amber and Jessie in the studio" className={styles.displayPicture} />
-        <Typography className={styles.text} variant="h4" component="div" gutterBottom>Amber Shand</Typography>
-            <Typography className={styles.text} variant="h6" align="justify">Frontend Software Engineer & Co-founder</Typography>
+                    <img src={adodoolaPicture} alt="a picture of Adodoola" className={styles.displayPicture} />
+        <Typography className={styles.text} variant="h4" component="div" gutterBottom>Adodoola Omiyale</Typography>
+            <Typography className={styles.text} variant="h6" align="justify">Technical Support Engineer & Head of Socials </Typography>
     <Typography className={styles.text} variant="body1" align="justify" gutterBottom>
-Amber is an award winning Frontend Engineer, co-host of the Glowing in Tech podcast showcasing black women in tech, created the Imposter Methods newsletter and hosts & speaks at events both virtually and in person.
-She has delivered talks for companies including LeadDev, Salesforce, codebar, Girls into Coding & Coding Black Females.
-She has hosted several of Code First Girls’ MOOCs (massive online open courses) for companies including GCHQ, Barclays, Bank of America, IPO and HubSpot.
+Adedoola works as a Technical Support Engineer for a feature management company called LaunchDarkly. Ade has a degree in Sustainable Development but crossed over to technology and sales to challenge herself and gain soft & technical skills in this evolving industry.
+        She is a key part in the team, helping Glowing In Tech increase their social media presence and has enjoyed being apart of the growing team. Fun fact: GIT helped her secure her current Full-time job!
  </Typography>
         <IconButton
           edge="start"
@@ -35,18 +34,18 @@ She has hosted several of Code First Girls’ MOOCs (massive online open courses
                     <IconButton
           edge="start"
           aria-label="LinkedIn"
-          href="https://www.linkedin.com/in/amber-shand/"
+          href="https://www.linkedin.com/in/adodoolaomiyale/"
         >
           <LinkedInIcon style={{color:'#00ffffff'}} />
         </IconButton>
                                 <IconButton
           edge="start"
           aria-label="Instagram"
-          href="https://www.linkedin.com/in/amber-shand/"
+          href="https://twitter.com/amberleetech"
         >
           <InstagramIcon style={{color:'#00ffffff'}} />
         </IconButton>
         </div>
     );
     };
-export default AboutAmber;
+export default AboutAdodoola;

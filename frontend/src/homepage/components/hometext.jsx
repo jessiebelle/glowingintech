@@ -2,15 +2,20 @@ import styles from "./Picture.module.css";
 import {Typography} from "@mui/material";
 import * as React from "react";
 import Overviewcards from "./overviewcards";
+import logoText from "../../static/logo-text.png";
 
 
 const HomeText = () => {
     return (
         <div className={styles.bg}>
+                            <div className={styles.bg}>
+                    <img src={logoText} alt={"the text logo for 'Glowing In Tech'"} className={styles.logoText}/>
+                </div>
             <div className={styles.textBackground}>
+
                 <div >
                         <Typography variant={"h4"} align={"justify"} gutterBottom className={styles.text}>
-Glowing in Tech is a <b>resource-sharing, community-centred platform </b> inspiring and engaging those underrepresented and underserved in tech. Founded when two Black women from non-technical backgrounds wanted to learn how to code and become software engineers but were faced by a lack of resources, representation and encouragement.
+a <b>resource-sharing, community-centred platform </b> inspiring and engaging those underrepresented and underserved in tech. Founded when two Black women from non-technical backgrounds wanted to learn how to code and become software engineers but were faced by a lack of resources, representation and encouragement.
                         </Typography>
     </div>
             </div>

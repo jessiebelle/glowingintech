@@ -10,6 +10,7 @@
     position: center;
     overflow: hidden;
     padding: 2%;
+
 }
 .picture {
     width: 100%;
@@ -104,3 +105,12 @@ border-radius: 50%;
     font-family: 'Roboto', Arial, sans-serif;
     padding: 1%;
 }
+.box {
+    flex-grow:1;
+    background-color: #eae4fb53;
+    margin: auto;
+    width: 90%;
+    height: auto;
+    -webkit-box-shadow:0px 0px 36px 3px rgba(250,197,250,0.9);
+    -moz-box-shadow: 0px 0px 36px 3px rgba(250,197,250,0.9);
+    box-shadow: 0px 0px 36px 3px rgba(250,197,250,0.9);}
