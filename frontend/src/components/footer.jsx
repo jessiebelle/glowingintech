@@ -1,28 +1,26 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import {Typography} from "@mui/material";
-import {Link} from "react-router-dom";
-import IconButton from '@material-ui/core/IconButton';
-import YouTubeIcon from '@mui/icons-material/YouTube';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import InstagramIcon from '@material-ui/icons/Instagram';
-
-
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import {Link, Typography} from "@mui/material";
+import IconButton from "@material-ui/core/IconButton";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import InstagramIcon from "@material-ui/icons/Instagram";
 
 
 function ResponsiveFooter() {
   const currentYear = new Date().getFullYear();
     return (
-    <AppBar position="sticky" >
-      <Toolbar>
+    <AppBar position="sticky" style={{ background: '#351c75ff'}} >
+      <Toolbar disableGutters>
       <Typography variant="body2">
         <div>
-        <Link href={"/contact"}>
+        <Link style={{color:"white"}} href={"/contact"}>
           Contact
         </Link>
-      <br />
-        <Link href={"/about"}>
+      </div>
+          <div>
+        <Link style={{color:"white"}} href={"/about"}>
           About Us
         </Link>
  </div>
@@ -32,22 +30,23 @@ function ResponsiveFooter() {
           edge="start"
           aria-label="YouTube"
           href="https://www.youtube.com/c/GlowinginTech"
+
         >
-          <YouTubeIcon />
+          <YouTubeIcon style={{color:"white"}}/>
         </IconButton>
         <IconButton
           edge="start"
           aria-label="Twitter"
           href="https://twitter.com/glowingintech"
         >
-          <TwitterIcon />
+          <TwitterIcon style={{color:"white"}} />
         </IconButton>
         <IconButton
           edge="start"
           aria-label="Instagram"
           href="https://www.instagram.com/glowingintech/"
         >
-          <InstagramIcon />
+          <InstagramIcon style={{color:"white"}} />
         </IconButton>
       </div>
       <Typography variant="caption">

@@ -1,33 +1,29 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
-import MenuItem from '@mui/material/MenuItem';
-import logo from '../img.png';
-import '@fontsource/roboto/300.css';
-import RecordVoiceOverIcon from '@mui/icons-material/RecordVoiceOver';
-import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
-import DiamondIcon from '@mui/icons-material/Diamond';
-import PeopleIcon from '@mui/icons-material/People';
-import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import Menu from "@mui/material/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
+import Container from "@mui/material/Container";
+import Button from "@mui/material/Button";
+import MenuItem from "@mui/material/MenuItem";
+import logo from "../img.png";
+import "@fontsource/roboto/300.css";
+import RecordVoiceOverIcon from "@mui/icons-material/RecordVoiceOver";
+import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
+import DiamondIcon from "@mui/icons-material/Diamond";
+import PeopleIcon from "@mui/icons-material/People";
+import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import {Link} from "react-router-dom";
 
-<link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-/>
 const pages = [
     {icon: <RecordVoiceOverIcon fontSize={"small"}/> , pageTitle: 'Podcast', href: '/podcast'},
     {icon: <FormatListBulletedIcon fontSize={"small"} />, pageTitle:' Shownotes', href: '/shownotes'},
     {icon: <DiamondIcon fontSize={"small"} />, pageTitle: ' Resources', href: '/resources'},
     {icon: <PeopleIcon fontSize={"small"} />, pageTitle: ' Community', href: '/community'},
-    {icon: <AlternateEmailIcon fontSize={"small"} />, pageTitle: ' Contact', href: '/contact'},
+    {icon: <AlternateEmailIcon fontSize={"small"} />, pageTitle: ' Team', href: '/about'},
 ];
 
 function ResponsiveAppBar() {
@@ -47,10 +43,10 @@ function ResponsiveAppBar() {
   };
   const logoSize = {height: 100};
   return (
-    <AppBar position="static" style={{ background: '#0A2A5E'}}>
+    <AppBar position="static" style={{ background: '#351c75ff'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-            <img src={logo} alt="Logo" style={logoSize} />
+            <img src={logo} alt="Logo" style={logoSize} onClick={() => window.location.href = '/'}/>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -58,7 +54,7 @@ function ResponsiveAppBar() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color="#00ffff1e"
             >
               <MenuIcon />
             </IconButton>
@@ -83,7 +79,7 @@ function ResponsiveAppBar() {
               {pages.map((page, index) => (
                    <Link to={page.href}>
                 <MenuItem key={index} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page.pageTitle}</Typography>
+                  <Typography color={"#00ffffff"}>{page.pageTitle}</Typography>
                 </MenuItem>
                     </Link>
               ))}
@@ -101,7 +97,7 @@ function ResponsiveAppBar() {
               fontFamily: 'monospace',
               fontWeight: 900,
               letterSpacing: '.3rem',
-              color: '#F15C80',
+              color: '#00ffffff',
               textDecoration: 'none',
             }}
           >
@@ -112,10 +108,9 @@ function ResponsiveAppBar() {
                 key={index}
                 onClick={handleCloseNavMenu}
                 href={page.href}
-                sx={{ my: 2, color: '#00AEEF', display: 'block',
-              ':hover': { transform: 'scale(1.1)', color: '#F15C80', transition: 'all 0.3s ease-in-out',}}}
+                sx={{ my: 2, color: '#00ffffff', display: 'block',
+              ':hover': { transform: 'scale(1.1)', color: '#ff00ffff', transition: 'all 0.3s ease-in-out',}}}
               >
-                  {page.icon}
                   {page.pageTitle}
               </Button>
             ))}

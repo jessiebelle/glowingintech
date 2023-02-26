@@ -4,26 +4,24 @@ import CommunityForm from "./components/communityform";
 import {Box} from "@mui/material";
 import CommunityText from "./components/communitytext";
 import Footer from "../components/footer";
-
-const styles = {width: '100%', height: '100%', objectFit: 'cover',
-    backgroundColor:'#1C1F33',};
+import styles from "./community.module.css";
 
 const Community = () => {
   return (
         <div>
-            <container className={styles}>
+            <container className={styles.background}>
             <ResponsiveAppBar pageTitle="Community" />
            </container>
         <Box textAlign={"center"} sx={{
         flexGrow: 1,
-        backgroundColor: '#1C1F33',
+        backgroundColor: '#351c75ff',
         height: 'auto',
         width: '100%',
 }} >
             <CommunityText/>
             <Box textAlign={"center"} sx={{
                 flexGrow: 1,
-                backgroundColor: '#FDFFFC',
+                backgroundColor: '#351c75ff',
             }}>
             <CommunityForm/>
         </Box>

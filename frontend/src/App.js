@@ -1,21 +1,16 @@
 import React from "react";
 import axios from "axios";
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-  } from "react-router-dom";
+import {BrowserRouter as Router, Route, Routes,} from "react-router-dom";
 // import Home component
 import Home from "./homepage/home";
 // import About component
 import About from "./about/about";
 // import ContactUs component
-import BlogPostIndex from "./components";
-// import community component
 import Community from "./community/community";
 import Contact from "./contact/contact";
 import Podcast from "./podcast/podcast";
-import Resources from "./resources/components/resources";
+import Resources from "./resources/resources";
+
 axios.defaults.baseURL = process.env.REACT_APP_API_URL
 
 

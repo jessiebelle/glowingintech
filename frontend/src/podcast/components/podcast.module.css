@@ -1,7 +1,7 @@
 .article {
     position: center;
     overflow: hidden;
-    background-color: #1C1F33;
+    background-color: #351c75ff;
 }
 .carousel {
     position: center;
@@ -9,10 +9,15 @@
     background-color: #D6EEFF;
     padding: 2%;
 }
+.bg {
+    position: center;
+    overflow: hidden;
+    padding: 2%;
+}
 .introdiv {
     position: center;
     overflow: hidden;
-    background-color: #0A2A5E;
+    background-color: #351c75ff;
     padding: 2%;
 }
 .text {
@@ -24,9 +29,10 @@
     padding: 1%;
 }
 .picture {
-    width: auto;
-    height: auto;
-    padding: 2%;
+width: 30%;
+-webkit-box-shadow:0px 0px 36px 3px rgba(0,255,255,0.9);
+-moz-box-shadow: 0px 0px 36px 3px rgba(0,255,255,0.9);
+box-shadow: 0px 0px 36px 3px rgba(0,255,255,0.9);
 }
 .picture:hover {
     transform: scale(1.1);

@@ -1,0 +1,41 @@
+version: '3.9'
+
+services:
+  django:
+    restart: unless-stopped
+    build: ./glowingintech/shownotes
+    environment:
+      DJANGO_SECRET_KEY: ${DJANGO_SECRET_KEY}
+      DATABASE_ENGINE: ${DATABASE_ENGINE}
+      DATABASE_NAME: ${DATABASE_NAME}
+      DATABASE_USERNAME: ${DATABASE_USERNAME}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD}
+      DATABASE_HOST: ${DATABASE_HOST}
+      DATABASE_PORT: ${DATABASE_PORT}
+      DJANGO_CORS_ORIGINS: ${DJANGO_CORS_ORIGINS}
+      DJANGO_DEBUG: ${DJANGO_DEBUG}
+      DJANGO_LOGGING: ${DJANGO_LOGGING}
+      DJANGO_ALLOWED_HOSTS: ${DJANGO_ALLOWED_HOSTS}
+      STATIC_ACCESS_KEY_ID: ${STATIC_ACCESS_KEY_ID}
+      STATIC_SECRET_KEY: ${STATIC_SECRET_KEY}
+      STATIC_BUCKET_NAME: ${STATIC_BUCKET_NAME}
+      STATIC_ENDPOINT_URL: ${STATIC_ENDPOINT_URL}
+      DJANGO_SETTINGS_MODULE: ${DJANGO_SETTINGS_MODULE}
+    ports:
+      - 8000:8000
+  nginx:
+    build: ./glowingintech/frontend
+    restart: unless-stopped
+    ports:
+      - 80:80
+      - 443:443
+    depends_on:
+      - django
+    volumes:
+      - ./certbot/www:/var/www/certbot/:ro
+      - ./certbot/conf/:/etc/nginx/ssl/:ro
+  certbot:
+    image: certbot/certbot:latest
+    volumes:
+      - ./certbot/www/:/var/www/certbot/:rw
+      - ./certbot/conf/:/etc/letsencrypt/:rw

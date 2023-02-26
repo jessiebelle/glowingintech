@@ -5,25 +5,13 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import TextField from "@material-ui/core/TextField";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
-import Link from "@material-ui/core/Link";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import Typography from "@material-ui/core/Typography";
-import { makeStyles } from "@material-ui/core/styles";
+import {makeStyles} from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 
-function MadeWithLove() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {"Built with love by the "}
-      <Link color="inherit" href="https://material-ui.com/">
-        Material-UI
-      </Link>
-      {" team."}
-    </Typography>
-  );
-}
 
 const useStyles = makeStyles(theme => ({
   "@global": {
@@ -39,16 +27,19 @@ const useStyles = makeStyles(theme => ({
   },
   avatar: {
     margin: theme.spacing(1),
-    backgroundColor: "#F15C80"
+    backgroundColor: "#04c7c7ff"
   },
   form: {
     width: "100%", // Fix IE 11 issue.
     marginTop: theme.spacing(3)
   },
+  input: {
+      backgroundColor: "antiquewhite",
+    },
   submit: {
     margin: theme.spacing(3, 0, 2),
-      color: "#FDFFFC",
-    backgroundColor: "#0A2A5E",
+      color: "#351c75ff",
+    backgroundColor: "#558C8C",
 },
 }));
 
@@ -62,8 +53,8 @@ export default function SignUp() {
                 <Avatar className={classes.avatar}>
                     <LockOutlinedIcon color={"#F15C80"}/>
                 </Avatar>
-                <Typography component="h1" variant="h5">
-                    Sign up
+                <Typography component="h1" variant="h5" color={"primary"}>
+                    Join the community
                 </Typography>
                 <form className={classes.form} noValidate>
                     <Grid container spacing={2}>
@@ -77,6 +68,7 @@ export default function SignUp() {
                                 id="firstName"
                                 label="First Name"
                                 autoFocus
+                                inputProps={{className: classes.input,}}
                             />
                         </Grid>
                         <Grid item xs={12} sm={6}>
@@ -88,6 +80,7 @@ export default function SignUp() {
                                 label="Last Name"
                                 name="lastName"
                                 autoComplete="lname"
+                                inputProps={{className: classes.input,}}
                             />
                         </Grid>
                         <Grid item xs={12}>
@@ -99,11 +92,13 @@ export default function SignUp() {
                                 label="Email Address"
                                 name="email"
                                 autoComplete="email"
+                                inputProps={{className: classes.input,}}
                             />
                         </Grid>
-                        <Grid item xs={12}>
+                        <Grid item xs={12} >
                             <FormControlLabel
-                                control={<Checkbox value="allowExtraEmails" color="primary"/>}
+                                control={<Checkbox value="allowExtraEmails" color="primary"
+/>}
                                 label="I want to receive the glowing in tech newsletter, event invitations and updates via email."
                             />
                         </Grid>
@@ -118,7 +113,6 @@ export default function SignUp() {
                         type="submit"
                         fullWidth
                         variant="contained"
-                        color={"#558C8C"}
                         className={classes.submit}
                     >
                         Sign Up
@@ -127,6 +121,8 @@ export default function SignUp() {
                     </Grid>
                 </form>
             </div>
+            <div>
+                <iframe src="https://glowingintech.substack.com/embed" width="480" height="320" title={"substack sign up"}></iframe></div>
             <Box mt={5}>
             </Box>
         </Container>
