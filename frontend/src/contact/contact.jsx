@@ -4,7 +4,6 @@ import ResponsiveFooter from "../components/footer";
 import ContactUsInfo from "./components/contactusinfo";
 
 
-
 const Contact = () => {
   return (
     <div>

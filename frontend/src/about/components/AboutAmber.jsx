@@ -1,15 +1,14 @@
 import React from "react";
 
-import {Typography
-} from "@mui/material";
-import IconButton from '@material-ui/core/IconButton';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
+import {Typography} from "@mui/material";
+import IconButton from "@material-ui/core/IconButton";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
 import amberPicture from "../../static/amberdp.jpeg";
 
 import styles from "./About.module.css";

@@ -1,13 +1,11 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import {Typography, Link} from "@mui/material";
-import IconButton from '@material-ui/core/IconButton';
-import YouTubeIcon from '@mui/icons-material/YouTube';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import InstagramIcon from '@material-ui/icons/Instagram';
-
-
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import {Link, Typography} from "@mui/material";
+import IconButton from "@material-ui/core/IconButton";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import InstagramIcon from "@material-ui/icons/Instagram";
 
 
 function ResponsiveFooter() {

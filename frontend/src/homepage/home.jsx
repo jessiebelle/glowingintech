@@ -6,9 +6,6 @@ import HomeText from "./components/hometext";
 import {Box} from "@mui/material";
 
 
-
-
-
 const styles = {width: '100%', height: '100%', objectFit: 'cover', margin: 'auto'};
 
   

@@ -6,7 +6,6 @@ import PodcastIntro from "./components/podcastintro";
 import ListeningPlatforms from "./components/listeningplatforms";
 
 
-
 const Podcast = () => {
   return (
     <div >

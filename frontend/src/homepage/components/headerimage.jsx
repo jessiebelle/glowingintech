@@ -5,7 +5,6 @@ import image from "../../static/Untitled.png";
 import logoText from "../../static/logo-text.png";
 
 
-
 const HeaderImage = () => {
   return (
     <article className={styles.article}>
