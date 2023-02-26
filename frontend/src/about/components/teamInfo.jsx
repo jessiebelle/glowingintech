@@ -9,6 +9,7 @@ import "@fontsource/roboto/700.css";
 import AboutAmber from "./AboutAmber";
 import AboutJessie from "./AboutJessie";
 import styles from "./About.module.css";
+import AboutAdodoola from "./AboutAdodoola";
 
 const TeamInfo = () =>{
   return (
@@ -27,6 +28,9 @@ const TeamInfo = () =>{
                                 </Grid>
                 <Grid xs={6} sm={4} md={4} alignItems={"auto"} padding={5}>
                                 <AboutJessie/>
+                                  </Grid>
+                    <Grid xs={6} sm={4} md={4} alignItems={"auto"} padding={5}>
+                                <AboutAdodoola/>
                                   </Grid>
               </Grid>
 
