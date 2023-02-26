@@ -79,7 +79,7 @@ function ResponsiveAppBar() {
               {pages.map((page, index) => (
                    <Link to={page.href}>
                 <MenuItem key={index} onClick={handleCloseNavMenu}>
-                  <Typography color={"#8BDEFA"}>{page.pageTitle}</Typography>
+                  <Typography color={"#00ffffff"}>{page.pageTitle}</Typography>
                 </MenuItem>
                     </Link>
               ))}
@@ -97,7 +97,7 @@ function ResponsiveAppBar() {
               fontFamily: 'monospace',
               fontWeight: 900,
               letterSpacing: '.3rem',
-              color: '#8BDEFA',
+              color: '#00ffffff',
               textDecoration: 'none',
             }}
           >
@@ -108,8 +108,8 @@ function ResponsiveAppBar() {
                 key={index}
                 onClick={handleCloseNavMenu}
                 href={page.href}
-                sx={{ my: 2, color: '#8BDEFA', display: 'block',
-              ':hover': { transform: 'scale(1.1)', color: '#C3C9E9', transition: 'all 0.3s ease-in-out',}}}
+                sx={{ my: 2, color: '#00ffffff', display: 'block',
+              ':hover': { transform: 'scale(1.1)', color: '#ff00ffff', transition: 'all 0.3s ease-in-out',}}}
               >
                   {page.pageTitle}
               </Button>
