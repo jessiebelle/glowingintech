@@ -6,6 +6,7 @@ import RecordVoiceOverIcon from "@mui/icons-material/RecordVoiceOver";
 import * as React from "react";
 import DiamondIcon from "@mui/icons-material/Diamond";
 import PeopleIcon from "@mui/icons-material/People";
+import styles from "./Picture.module.css";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#F15C80' : '#0A2A5E',
@@ -24,15 +25,15 @@ const OverviewCards = () => {
     return (
     <Box textAlign={"center"} sx={{
             flexGrow: 1,
-            backgroundColor: '#0A2A5E',
+            backgroundColor: '#351c75ff',
             height: 300,
             }} >
           <Grid container spacing={{s: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} justifyContent="space-around" alignItems="center">
             {cards.map((card, index) => (
               <Grid xs={2} sm={4} md={4} key={index} alignItems="center" padding={5}>
-                <Item elevation="12" sx={{ padding: 2,
+                <Item elevation="12" sx={{ padding: 2, backgroundColor: '#eae4fb53', boxShadow: 10, borderRadius: 10,
     ':hover': {
-      boxShadow: 20, backgroundColor: '#1C1F33', color: 'white',
+      boxShadow: 20, backgroundColor: '#ff00ff0c', color: 'white',
         transform: 'scale(1.08)', transition: 'all 0.3s ease-in-out',
     },
   }}>
@@ -43,6 +44,7 @@ const OverviewCards = () => {
                     </Item>
               </Grid>
             ))}
+
           </Grid>
     </Box>
     );

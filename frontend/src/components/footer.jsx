@@ -15,7 +15,7 @@ function ResponsiveFooter() {
   const currentYear = new Date().getFullYear();
     return (
     <AppBar position="sticky" style={{ background: '#351c75ff'}} >
-      <Toolbar>
+      <Toolbar disableGutters>
       <Typography variant="body2">
         <div>
         <Link style={{color:"white"}} href={"/contact"}>

@@ -50,7 +50,7 @@ function ResponsiveAppBar() {
     <AppBar position="static" style={{ background: '#351c75ff'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-            <img src={logo} alt="Logo" style={logoSize} />
+            <img src={logo} alt="Logo" style={logoSize} onClick={() => window.location.href = '/'}/>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton

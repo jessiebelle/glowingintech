@@ -6,9 +6,10 @@ import ResponsiveFooter from "../../components/footer";
 
 const Resources = () => {
   return (
-    <div>        <ResponsiveAppBar pageTitle="Resources" />
+    <div style={{backgroundColor: "#351c75ff"}}>        <ResponsiveAppBar pageTitle="Resources" />
         <AboutHeader/>
               <h1>Coming soon</h1>
+
         <ResponsiveFooter/>
 
     </div>
