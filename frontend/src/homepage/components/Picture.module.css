@@ -77,7 +77,6 @@
 .introdiv {
     position: center;
     overflow: hidden;
-    padding: 2%;
 }
 .textBackground {
     background-color: #a9f1f11c;
@@ -101,7 +100,12 @@ box-shadow: 0px 0px 36px 3px rgba(165,151,209,0.9);
 .cardGlow{
     margin: auto;
     background-color: #eae4fb53;
--webkit-box-shadow:0px 0px 36px 3px rgba(250,197,250,0.9);
--moz-box-shadow: 0px 0px 36px 3px rgba(250,197,250,0.9);
-box-shadow: 0px 0px 36px 3px rgba(250,197,250,0.9);
+    -webkit-box-shadow:0px 0px 36px 3px rgba(250,197,250,0.9);
+    -moz-box-shadow: 0px 0px 36px 3px rgba(250,197,250,0.9);
+    box-shadow: 0px 0px 36px 3px rgba(250,197,250,0.9);
+
+}
+.cardGlow:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }

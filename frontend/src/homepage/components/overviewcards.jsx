@@ -31,12 +31,7 @@ const OverviewCards = () => {
           <Grid container spacing={{s: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} justifyContent="space-around" alignItems="center">
             {cards.map((card, index) => (
               <Grid xs={2} sm={4} md={4} key={index} alignItems="center" padding={5}>
-                <Item elevation="12" className={styles.cardGlow} sx={{
-    ':hover': {
-      boxShadow: 20,
-        transform: 'scale(1.08)', transition: 'all 0.3s ease-in-out',
-    },
-  }}>
+                <Item elevation="12" className={styles.cardGlow}>
                     {card.icon}
                         <Typography variant={"h4"} >{card.pageTitle}</Typography>
                 <br/>
