@@ -15,7 +15,7 @@ const HomeText = () => {
 
                 <div >
                         <Typography variant={"h4"} align={"justify"} gutterBottom className={styles.text}>
-a <b>resource-sharing, community-centred platform </b> inspiring and engaging those underrepresented and underserved in tech. Founded when two Black women from non-technical backgrounds wanted to learn how to code and become software engineers but were faced by a lack of resources, representation and encouragement.
+a resource-sharing, community-centred platform inspiring and engaging those underrepresented and underserved in tech. Founded when two Black women from non-technical backgrounds wanted to learn how to code and become software engineers but were faced by a lack of resources, representation and encouragement.
                         </Typography>
     </div>
             </div>
