@@ -30,11 +30,7 @@ function App() {
             with exact path "/about", in component 
             props we passes the imported component*/}
             <Route path="/about" element={<About />} />
-              
-            {/* This route is for index component
-            with exact path "/index", in 
-            component props we passes the imported component*/}
-            <Route path="/index" element={<BlogPostIndex />} />
+
 
             {/* This route is for community component
             with exact path "/community", in
