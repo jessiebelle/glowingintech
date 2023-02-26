@@ -1,3 +1,4 @@
+import React from "react";
 
 import styles from "./Resources.module.css";
 import image from "../../static/leaddev.jpeg";

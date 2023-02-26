@@ -1,5 +1,5 @@
 import styles from "./Picture.module.css";
-import {Box, Typography} from "@mui/material";
+import {Typography} from "@mui/material";
 import * as React from "react";
 import Overviewcards from "./overviewcards";
 

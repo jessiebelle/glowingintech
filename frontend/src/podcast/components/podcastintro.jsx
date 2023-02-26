@@ -1,3 +1,4 @@
+import React from "react";
 import {Box, Typography} from "@mui/material";
 import styles from "./podcast.module.css";
 import '@fontsource/roboto/300.css';

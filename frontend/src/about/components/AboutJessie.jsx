@@ -1,7 +1,5 @@
 import React from "react";
-import Grid from "@mui/material/Unstable_Grid2";
-
-import {Typography, Box
+import {Typography
 } from "@mui/material";
 import IconButton from '@material-ui/core/IconButton';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -11,10 +9,8 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-import amberPicture from "../../static/amberdp.jpeg";
 
 import styles from "./About.module.css";
-import OverviewCards from "../../homepage/components/overviewcards";
 import jessiePicture from "../../static/jessiedp.jpg";
 
 const AboutJessie = () =>{

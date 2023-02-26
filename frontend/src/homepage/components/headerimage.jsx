@@ -1,3 +1,5 @@
+import React from "react";
+
 import styles from "./Picture.module.css";
 import image from "../../static/Untitled.png";
 import logoText from "../../static/logo-text.png";

@@ -1,3 +1,4 @@
+import React from "react";
 
 import image from "../../static/season2thumbnail.png";
 import styles from "./podcast.module.css";

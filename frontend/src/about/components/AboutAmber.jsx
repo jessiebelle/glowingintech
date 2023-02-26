@@ -1,7 +1,6 @@
 import React from "react";
-import Grid from "@mui/material/Unstable_Grid2";
 
-import {Typography, Box
+import {Typography
 } from "@mui/material";
 import IconButton from '@material-ui/core/IconButton';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -14,7 +13,6 @@ import '@fontsource/roboto/700.css';
 import amberPicture from "../../static/amberdp.jpeg";
 
 import styles from "./About.module.css";
-import OverviewCards from "../../homepage/components/overviewcards";
 
 const AboutAmber = () =>{
   return (

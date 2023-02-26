@@ -18,10 +18,6 @@ import PeopleIcon from '@mui/icons-material/People';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import {Link} from "react-router-dom";
 
-<link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-/>
 const pages = [
     {icon: <RecordVoiceOverIcon fontSize={"small"}/> , pageTitle: 'Podcast', href: '/podcast'},
     {icon: <FormatListBulletedIcon fontSize={"small"} />, pageTitle:' Shownotes', href: '/shownotes'},

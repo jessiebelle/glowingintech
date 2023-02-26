@@ -122,7 +122,7 @@ export default function SignUp() {
                 </form>
             </div>
             <div>
-                <iframe src="https://glowingintech.substack.com/embed" width="480" height="320"></iframe></div>
+                <iframe src="https://glowingintech.substack.com/embed" width="480" height="320" title={"substack sign up"}></iframe></div>
             <Box mt={5}>
             </Box>
         </Container>
