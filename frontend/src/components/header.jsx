@@ -54,9 +54,9 @@ function ResponsiveAppBar() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="#00ffff1e"
+              color={"primary"}
             >
-              <MenuIcon />
+              <MenuIcon color={"#00ffffff"} />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -79,7 +79,7 @@ function ResponsiveAppBar() {
               {pages.map((page, index) => (
                    <Link to={page.href}>
                 <MenuItem key={index} onClick={handleCloseNavMenu}>
-                  <Typography color={"#00ffffff"}>{page.pageTitle}</Typography>
+                  <Typography color={"black"}>{page.pageTitle}</Typography>
                 </MenuItem>
                     </Link>
               ))}
