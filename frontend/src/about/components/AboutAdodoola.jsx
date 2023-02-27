@@ -19,8 +19,8 @@ const AboutAdodoola = () =>{
 
                     <img src={adodoolaPicture} alt="a picture of Adodoola" className={styles.displayPicture} />
         <Typography className={styles.text} variant="h4" component="div" gutterBottom>Adodoola Omiyale</Typography>
-            <Typography className={styles.text} variant="h6" align="justify">Technical Support Engineer & Head of Socials </Typography>
-    <Typography className={styles.text} variant="body1" align="justify" gutterBottom>
+            <Typography className={styles.text} variant="h6" align="left">Technical Support Engineer & Head of Socials </Typography>
+    <Typography className={styles.text} variant="body1" align="left" gutterBottom>
 Adedoola works as a Technical Support Engineer for a feature management company called LaunchDarkly. Ade has a degree in Sustainable Development but crossed over to technology and sales to challenge herself and gain soft & technical skills in this evolving industry.
         She is a key part in the team, helping Glowing In Tech increase their social media presence and has enjoyed being apart of the growing team. Fun fact: GIT helped her secure her current Full-time job!
  </Typography>

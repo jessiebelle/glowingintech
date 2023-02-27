@@ -19,8 +19,8 @@ const AboutJessie = () =>{
                     <img src={jessiePicture} alt="Amber and Jessie in the studio" className={styles.displayPicture} />
 
                     <Typography className={styles.text} variant="h4" component="div" gutterBottom>Jessie Auguste</Typography>
-                        <Typography className={styles.text} variant="h6" align="justify">Backend Software Engineer & Co-founder</Typography>
-    <Typography className={styles.text} variant="body1" align="justify" gutterBottom>
+                        <Typography className={styles.text} variant="h6" align="left">Backend Software Engineer & Co-founder</Typography>
+    <Typography className={styles.text} variant="body1" align="left" gutterBottom>
 Jessie is an award winning Software Engineer at CybSafe, Co-Founder and Co-host of Glowing in Tech.
 She is a key part of the Leadership Team for Coding Black Females.
 She’s delivered technical talks for companies including LeadDev, codebar, General Assembly, Docker, Girls into Coding & Daily Dev.

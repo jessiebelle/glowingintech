@@ -41,7 +41,7 @@ const ListeningPlatforms = () => {
                 padding:5,
                 width: '80%',
   }}>
-<Typography variant={"h4"} align={"justify"} fontWeight={10} >
+<Typography variant={"h4"} align={"left"} fontWeight={10} >
     Listen on your favorite platform
 </Typography>
                     <br/>
@@ -64,7 +64,7 @@ const ListeningPlatforms = () => {
           </Grid>
                 </a>))}
         </Grid>
-                    <Typography variant={"h4"} align={"justify"} fontWeight={10} >
+                    <Typography variant={"h4"} align={"left"} fontWeight={10} >
                     <br/>
                         <Link href={"https://lnk.to/glowingintech"}>Click here for a full list of streaming platforms </Link></Typography>
         </Box>

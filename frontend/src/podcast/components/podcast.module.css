@@ -23,7 +23,7 @@
 .text {
     color: #FDFFFC;
     text-shadow: 0 0 25px black;
-    height: fit-content;
+    height: auto;
     margin: auto;
     font-family: 'Roboto', Arial, sans-serif;
     padding: 1%;
