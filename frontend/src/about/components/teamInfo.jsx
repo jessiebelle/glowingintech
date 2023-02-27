@@ -17,7 +17,9 @@ const TeamInfo = () =>{
           <div className={styles.bg}>
         <Box className={styles.box}>
             <Typography className={styles.text} variant="h3" component="div" gutterBottom>Meet the Team</Typography>
-<Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+      <Typography variant={"h5"} align={"left"} className={styles.aboutheader}>We're a group of engineers taking on the digital skills shortage and lack of diversity in the tech industry
+ </Typography>
+            <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
               <Grid xs={6} sm={4} md={4} alignItems="center" padding={5}>
               <AboutAmber/>
                                 </Grid>
