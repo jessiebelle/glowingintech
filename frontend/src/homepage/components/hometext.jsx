@@ -2,23 +2,20 @@ import styles from "./Picture.module.css";
 import {Typography} from "@mui/material";
 import * as React from "react";
 import Overviewcards from "./overviewcards";
-import logoText from "../../static/logo-text.png";
 
 
 const HomeText = () => {
     return (
         <div className={styles.bg}>
-                            <div className={styles.bg}>
-                    <img src={logoText} alt={"the text logo for 'Glowing In Tech'"} className={styles.logoText}/>
-                </div>
             <div className={styles.textBackground}>
                 <div >
-                        <Typography align={"justify"} gutterBottom className={styles.text} variant={"h5"}>
-a resource-sharing, community-centred platform inspiring and engaging those underrepresented and underserved in tech. Founded when two Black women from non-technical backgrounds wanted to learn how to code and become software engineers but were faced by a lack of resources, representation and encouragement.
-                        <br/> <br/>
-                            Now, as successful engineers, they are creating a space that can make the tech field feel more inclusive and accessible and remove unnecessary barriers to entry.
+                        <Typography align={"left"} gutterBottom className={styles.text} variant={"h5"}>
+Glowing in Tech is a community driven platform, inspiring, empowering, connecting, and encouraging those underrepresented and underserved in tech. Founded by two Black women from non-technical backgrounds who first hand faced a lack of resources, representation and encouragement when looking to launch a coding career.
+<br/> <br/>
+Glowing in Tech aims to create a safe, empowering and fun space that makes the tech industry feel more inclusive and accessible.
+<br/> <br/>
+After a successful podcast launched in 2022, season 2 is set to launch this March so watch this space and follow our Linkedin page to become part our growing and active community.
 
-Through events, knowledge-sharing, content creation and a podcast full of inspiring and high-profile speakers, we want to amplify and showcase underrepresented professionals in our industry and hopefully open doors for future talent in tech.
                         </Typography>
     </div>
             </div>

@@ -19,8 +19,8 @@ const AboutAmber = () =>{
 
                     <img src={amberPicture} alt="Amber and Jessie in the studio" className={styles.displayPicture} />
         <Typography className={styles.text} variant="h4" component="div" gutterBottom>Amber Shand</Typography>
-            <Typography className={styles.text} variant="h6" align="justify">Frontend Software Engineer & Co-founder</Typography>
-    <Typography className={styles.text} variant="body1" align="justify" gutterBottom>
+            <Typography className={styles.text} variant="h6" align="left">Frontend Software Engineer & Co-founder</Typography>
+    <Typography className={styles.text} variant="body1" align="left" gutterBottom>
 Amber is an award winning Frontend Engineer, co-host of the Glowing in Tech podcast showcasing black women in tech, created the Imposter Methods newsletter and hosts & speaks at events both virtually and in person.
 She has delivered talks for companies including LeadDev, Salesforce, codebar, Girls into Coding & Coding Black Females.
 She has hosted several of Code First Girls’ MOOCs (massive online open courses) for companies including GCHQ, Barclays, Bank of America, IPO and HubSpot.

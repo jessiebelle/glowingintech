@@ -1,7 +1,7 @@
 import React from "react";
 
 import styles from "./Picture.module.css";
-import image from "../../static/header.jpg";
+import image from "../../static/homepageheader.png";
 import {Typography} from "@mui/material";
 
 

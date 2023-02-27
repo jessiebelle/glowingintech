@@ -20,8 +20,8 @@ import {Link} from "react-router-dom";
 
 const pages = [
     {icon: <RecordVoiceOverIcon fontSize={"small"}/> , pageTitle: 'Podcast', href: '/podcast'},
-    {icon: <FormatListBulletedIcon fontSize={"small"} />, pageTitle:' Shownotes', href: '/shownotes'},
-    {icon: <DiamondIcon fontSize={"small"} />, pageTitle: ' Resources', href: 'https://glowing-in-tech.notion.site/Glowing-in-Tech-Show-notes-f568e988a20b40c5bde611fa5e18e234'},
+    {icon: <FormatListBulletedIcon fontSize={"small"} />, pageTitle:' Shownotes', href: 'https://glowing-in-tech.notion.site/Glowing-in-Tech-Show-notes-f568e988a20b40c5bde611fa5e18e234'},
+    {icon: <DiamondIcon fontSize={"small"} />, pageTitle: ' Resources', href: '/resources'},
     {icon: <PeopleIcon fontSize={"small"} />, pageTitle: ' Community', href: '/community'},
     {icon: <AlternateEmailIcon fontSize={"small"} />, pageTitle: ' Team', href: '/about'},
 ];
