@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./Picture.module.css";
 import image from "../../static/header.jpg";
-import {Box} from "@mui/material";
+import {Typography} from "@mui/material";
 
 
 const HeaderImage = () => {
@@ -12,10 +12,7 @@ const HeaderImage = () => {
         <source media="(min-width: 0px)" srcSet={image} />
         <img src={image} alt="Amber and Jessie in the studio" className={styles.picture} />
       </picture>
-        <Box sx={{display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,}}>
-            <h1 className={styles.header}>Engineering a platform for underrepresented people <b>thrive</b> in tech</h1>
-        </Box>
+            <Typography align={"center"} className={styles.header} variant={"h2"}>Engineering a platform for underrepresented people <b>thrive</b></Typography>
         </article>
   );
 };

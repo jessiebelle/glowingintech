@@ -8,7 +8,7 @@ import styles from "./Picture.module.css";
 
 
 const cards = [
-    {icon: <RecordVoiceOverIcon fontSize={"large"}/> , pageTitle: 'Podcast', href: '/podcast', description: 'A careers focused, award winning podcast, with a variety of guests. Giving you insight into the possibilities of careers in tech.'},
+    {icon: <RecordVoiceOverIcon fontSize={"large"}/> , pageTitle: 'Podcast', href: '/podcast', description: 'An award winning podcast, with a variety of guests. Giving you insight into different careers.'},
     {icon: <DiamondIcon fontSize={"large"} />, pageTitle: ' Resources', href: '/resources', description: 'Videos, blog posts, downloadable resources, events and more to help you on your journey.'},
     {icon: <PeopleIcon fontSize={"large"} />, pageTitle: ' Community', href: '/community', description: 'A place where all tech enthusiasts can come together to share their experiences.'},
 ];
