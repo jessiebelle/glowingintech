@@ -3,6 +3,7 @@ import ResponsiveAppBar from '../components/header'
 import HeaderImage from './components/headerimage'
 import Footer from '../components/footer'
 import HomeText from './components/hometext'
+import HomeCarousel from './components/homecarousel'
 import { Box } from '@mui/material'
 
 const styles = { width: '100%', height: '100%', objectFit: 'cover', margin: 'auto' }
@@ -23,6 +24,7 @@ const Home = () => {
           width: '100%',
         }}
       >
+          <HomeCarousel/>
         <HomeText />
       </Box>
       <Footer />
