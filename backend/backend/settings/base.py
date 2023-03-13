@@ -11,11 +11,25 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+from dotenv import load_dotenv
 import os
+
+load_dotenv()
 
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
 
+def bool_env(name, default=False):
+    """Convert environment value to a boolean"""
+    value = os.environ.get(name, default)
+    return False if value in ["False", "false"] else bool(value)
+
+
+def get_file_contents(filename):
+    if os.path.exists(filename):
+        with open(filename) as f:
+            return f.read().replace("\n", "")
+    return None
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
@@ -86,11 +100,16 @@ WSGI_APPLICATION = "backend.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+DBINFO = os.environ.get('DATABASES', {})
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
-    }
+   'default': {
+       'ENGINE': 'django.db.backends.mysql',
+       'HOST': DBINFO['host'],
+       'PORT': DBINFO['port'],
+       'NAME': DBINFO['name'],
+       'USER': DBINFO['user'],
+       'PASSWORD': DBINFO['password'],
+   }
 }
 
 

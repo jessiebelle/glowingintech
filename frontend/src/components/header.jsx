@@ -1,52 +1,73 @@
-import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
-import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
-import MenuItem from "@mui/material/MenuItem";
-import logo from "../img.png";
-import "@fontsource/roboto/300.css";
-import RecordVoiceOverIcon from "@mui/icons-material/RecordVoiceOver";
-import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
-import DiamondIcon from "@mui/icons-material/Diamond";
-import PeopleIcon from "@mui/icons-material/People";
-import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
-import {Link} from "react-router-dom";
+import * as React from 'react'
+import AppBar from '@mui/material/AppBar'
+import Box from '@mui/material/Box'
+import Toolbar from '@mui/material/Toolbar'
+import IconButton from '@mui/material/IconButton'
+import Typography from '@mui/material/Typography'
+import Menu from '@mui/material/Menu'
+import MenuIcon from '@mui/icons-material/Menu'
+import Container from '@mui/material/Container'
+import Button from '@mui/material/Button'
+import MenuItem from '@mui/material/MenuItem'
+import logo from '../img.png'
+import '@fontsource/roboto/300.css'
+import RecordVoiceOverIcon from '@mui/icons-material/RecordVoiceOver'
+import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted'
+import DiamondIcon from '@mui/icons-material/Diamond'
+import PeopleIcon from '@mui/icons-material/People'
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail'
+import { Link } from 'react-router-dom'
 
 const pages = [
-    {icon: <RecordVoiceOverIcon fontSize={"small"}/> , pageTitle: 'Podcast', href: '/podcast'},
-    {icon: <FormatListBulletedIcon fontSize={"small"} />, pageTitle:' Shownotes', href: 'https://glowing-in-tech.notion.site/Glowing-in-Tech-Show-notes-f568e988a20b40c5bde611fa5e18e234'},
-    {icon: <DiamondIcon fontSize={"small"} />, pageTitle: ' Resources', href: '/resources'},
-    {icon: <PeopleIcon fontSize={"small"} />, pageTitle: ' Community', href: '/community'},
-    {icon: <AlternateEmailIcon fontSize={"small"} />, pageTitle: ' Team', href: '/about'},
-];
+  {
+    icon: <RecordVoiceOverIcon fontSize={'small'} />,
+    pageTitle: 'Podcast',
+    href: '/podcast',
+  },
+  {
+    icon: <FormatListBulletedIcon fontSize={'small'} />,
+    pageTitle: ' Shownotes',
+    href: 'https://glowing-in-tech.notion.site/Glowing-in-Tech-Show-notes-f568e988a20b40c5bde611fa5e18e234',
+  },
+  {
+    icon: <DiamondIcon fontSize={'small'} />,
+    pageTitle: ' Resources',
+    href: '/resources',
+  },
+  {
+    icon: <PeopleIcon fontSize={'small'} />,
+    pageTitle: ' Community',
+    href: '/community',
+  },
+  { icon: <AlternateEmailIcon fontSize={'small'} />, pageTitle: ' Team', href: '/about' },
+]
 
 function ResponsiveAppBar() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = React.useState(null)
+  const [anchorElUser, setAnchorElUser] = React.useState(null)
 
   const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
+    setAnchorElNav(event.currentTarget)
+  }
 
   const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
+    setAnchorElNav(null)
+  }
 
   const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-  const logoSize = {height: 100};
+    setAnchorElUser(null)
+  }
+  const logoSize = { height: 100 }
   return (
-    <AppBar position="static" style={{ background: '#351c75ff'}}>
+    <AppBar position="static" style={{ background: '#351c75ff' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-            <img src={logo} alt="Logo" style={logoSize} onClick={() => window.location.href = '/'}/>
+          <img
+            src={logo}
+            alt="Logo"
+            style={logoSize}
+            onClick={() => (window.location.href = '/')}
+          />
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -54,9 +75,9 @@ function ResponsiveAppBar() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color={"primary"}
+              color={'primary'}
             >
-              <MenuIcon color={"#00ffffff"} />
+              <MenuIcon color={'#00ffffff'} />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -77,11 +98,11 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page, index) => (
-                   <Link to={page.href}>
-                <MenuItem key={index} onClick={handleCloseNavMenu}>
-                  <Typography color={"black"}>{page.pageTitle}</Typography>
-                </MenuItem>
-                    </Link>
+                <Link to={page.href}>
+                  <MenuItem key={index} onClick={handleCloseNavMenu}>
+                    <Typography color={'black'}>{page.pageTitle}</Typography>
+                  </MenuItem>
+                </Link>
               ))}
             </Menu>
           </Box>
@@ -100,18 +121,25 @@ function ResponsiveAppBar() {
               color: '#00ffffff',
               textDecoration: 'none',
             }}
-          >
-          </Typography>
+          ></Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page, index) => (
               <Button
                 key={index}
                 onClick={handleCloseNavMenu}
                 href={page.href}
-                sx={{ my: 2, color: '#00ffffff', display: 'block',
-              ':hover': { transform: 'scale(1.1)', color: '#ff00ffff', transition: 'all 0.3s ease-in-out',}}}
+                sx={{
+                  my: 2,
+                  color: '#00ffffff',
+                  display: 'block',
+                  ':hover': {
+                    transform: 'scale(1.1)',
+                    color: '#ff00ffff',
+                    transition: 'all 0.3s ease-in-out',
+                  },
+                }}
               >
-                  {page.pageTitle}
+                {page.pageTitle}
               </Button>
             ))}
           </Box>
@@ -132,12 +160,11 @@ function ResponsiveAppBar() {
               }}
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
-            >
-            </Menu>
+            ></Menu>
           </Box>
         </Toolbar>
       </Container>
     </AppBar>
-  );
+  )
 }
-export default ResponsiveAppBar;
+export default ResponsiveAppBar

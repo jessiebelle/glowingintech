@@ -1,5 +1,5 @@
 const Post = ({ id, detail_url, stockPrice, timeElapsed }) => {
-  if (!company) return <div />;
+  if (!company) return <div />
   return (
     <table>
       <tbody>
@@ -19,5 +19,5 @@ const Post = ({ id, detail_url, stockPrice, timeElapsed }) => {
         </tr>
       </tbody>
     </table>
-  );
-};
+  )
+}

@@ -1,4 +1,4 @@
-import {createTheme} from "@mui/material/styles";
+import { createTheme } from '@mui/material/styles'
 
 const Theme = createTheme({
   status: {
@@ -14,6 +14,6 @@ const Theme = createTheme({
       contrastText: '#fff',
     },
   },
-});
+})
 
-export default Theme;
+export default Theme
