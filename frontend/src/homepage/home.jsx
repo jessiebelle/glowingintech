@@ -13,7 +13,6 @@ const Home = () => {
     <div style={{ backgroundColor: '#351c75ff', padding: 3 }}>
       <ResponsiveAppBar pageTitle="Home" />
       <container class={styles}>
-        <HeaderImage />
       </container>
       <Box
         textAlign={'center'}
