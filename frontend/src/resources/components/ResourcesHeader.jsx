@@ -14,9 +14,6 @@ const ResourcesHeader = () => {
           className={styles.aboutpicture}
         />
       </picture>
-      <h1 className={styles.aboutheader}>
-        A hub of community-built resources to help you on your journey to a career in tech
-      </h1>
     </article>
   )
 }
