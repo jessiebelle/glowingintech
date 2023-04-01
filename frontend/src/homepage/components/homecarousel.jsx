@@ -11,9 +11,9 @@ const HomeCarousel = () => {
 	return (
 		<CCarousel controls indicators>
 			<CCarouselItem>
-								<CImage className="d-block w-100" src="https://s3.eu-west-2.amazonaws.com/glowingintech.com/static/Launch+Party+Pictures/588A8335.jpg" alt="slide 3"/>
+								<CImage className="d-block w-100" src="https://s3.eu-west-2.amazonaws.com/glowingintech.com/static/Launch+Party+Pictures/Screenshot+2023-04-01+at+14.11.12.png" alt="slide 3"/>
 				<CCarouselCaption className="d-none d-md-block">
-					<img src={logoText} className={styles.logoText}/>
+					<img alt={"glowing in tech logo"} src={logoText} className={styles.logoText}/>
 					<h5>Empowering underrepresented people in tech</h5>
 				</CCarouselCaption>
 			</CCarouselItem>

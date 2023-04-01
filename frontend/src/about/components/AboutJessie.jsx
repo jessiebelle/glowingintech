@@ -17,7 +17,7 @@ const AboutJessie = () => {
     <div>
       <img
         src={jessiePicture}
-        alt="Amber and Jessie in the studio"
+        alt="Jessie"
         className={styles.displayPicture}
       />
 
