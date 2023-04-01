@@ -20,15 +20,11 @@
 
 }
 .logoText {
-    top: 0;
-    bottom: 10%;
-    left: 0;
-    right: 0;
     height: fit-content;
     margin: auto;
     align-content: center;
         position: relative;
-    width: 60%;
+    width: 100%;
 
 
 }
