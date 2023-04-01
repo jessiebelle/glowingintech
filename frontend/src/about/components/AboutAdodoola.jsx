@@ -18,7 +18,7 @@ const AboutAdodoola = () => {
     <div>
       <img
         src={adodoolaPicture}
-        alt="a picture of Adodoola"
+        alt="Adodoola"
         className={styles.displayPicture}
       />
       <Typography className={styles.text} variant="h4" component="div" gutterBottom>

@@ -18,7 +18,7 @@ const AboutAmber = () => {
     <div>
       <img
         src={amberPicture}
-        alt="Amber and Jessie in the studio"
+        alt="Amber"
         className={styles.displayPicture}
       />
       <Typography className={styles.text} variant="h4" component="div" gutterBottom>

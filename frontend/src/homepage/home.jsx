@@ -1,6 +1,5 @@
 import React from 'react'
 import ResponsiveAppBar from '../components/header'
-import HeaderImage from './components/headerimage'
 import Footer from '../components/footer'
 import HomeText from './components/hometext'
 import HomeCarousel from './components/homecarousel'
