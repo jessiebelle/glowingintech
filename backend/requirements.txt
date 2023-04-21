@@ -77,7 +77,7 @@ rjsmin==1.2.0
 s3transfer==0.6.0
 six==1.16.0
 soupsieve==2.3.2.post1
-sqlparse==0.3.1
+sqlparse==0.4.4
 stringcase==1.2.0
 telepath==0.3
 text-unidecode==1.3
