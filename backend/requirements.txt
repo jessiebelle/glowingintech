@@ -57,7 +57,7 @@ openpyxl==3.0.10
 packaging==23.0
 parsedatetime==2.6
 pathspec==0.10.3
-Pillow==9.3.0
+Pillow==10.0.1
 pipreqs==0.4.12
 platformdirs==2.5.2
 protobuf==3.20.3
