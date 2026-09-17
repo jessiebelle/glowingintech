@@ -7,10 +7,12 @@ db.sqlite3
 /staticfiles/
 /static/
 frontend/node_modules/
-frontend/.vscode
 /node_modules/
 node_modules/
 /.idea
-/.vscode
 
 /mazurbeam/settings/local.py
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
